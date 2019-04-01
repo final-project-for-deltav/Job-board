@@ -9,24 +9,36 @@
 <body>
   <main>
     <form class="post-job-form">
-      <fieldset>
-        <label class="post-job-form__label" for="company-name">Company Name
-          <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name">
-        </label>
-        <label class="post-job-form__label" for="job-title">Job Title
-          <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title">
-        </label>
-        <label class="post-job-form__label" for="compensation-amount">Compensation
-          <input id="compensation-amount" class="post-job-form__input" type="text" placeholder="50,000">
-          <select id="compensation-frequency" class="compensation-frequency">
-            <option>Yearly</option>
-            <option>Hourly</option>
-          </select>
-        </label>
-        <label class="post-job-form__label" for="sponsored">Company Name
-          <input id="sponsored" class="post-job-form__input" type="text" placeholder="Company Name">
-        </label>
-      </fieldset>
+      <label class="post-job-form__label" for="company-name">Company Name
+        <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name">
+      </label>
+      <label class="post-job-form__label" for="job-title">Job Title
+        <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title">
+      </label>
+      <label class="post-job-form__label" for="job-summary">Job Summary
+        <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary"></textarea>
+      </label>
+      <label class="post-job-form__label" for="compensation-amount">Compensation
+        <input id="compensation-amount" class="post-job-form__input" type="text" placeholder="50,000">
+        <select id="compensation-frequency" class="compensation-frequency">
+          <option value="yearly">Yearly</option>
+          <option value="hourly">Hourly</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+      </label>
+      <label class="post-job-form__label" for="application-link">Application Link
+        <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">
+      </label>
+      <label class="post-job-form__label" for="city">City
+        <input id="city" class="post-job-form__input" type="text" placeholder="City">
+      </label>
+      <label class="post-job-form__label" for="about-company">About Company
+        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company"></textarea>
+      </label>
+      <label class="post-job-form__label" for="sponsored">
+        <input id="sponsored" class="post-job-form__input" type="checkbox">Sponsored Job
+      </label>
     </form>
   </main>
 </body>
