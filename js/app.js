@@ -1,11 +1,12 @@
 "use strict";
 
-
-function Job(companyName, annualSalary, sponsored, location, summarry, link) {
+function Job(companyName, annualSalary, sponsored, location, jobSummary, link) {
     this.companyName = companyName,
     this.annualSalary = annualSalary,
     this.sponsored = sponsored,
     this.location = location,
-    this.summarry = summarry,
+    this.jobSummary = jobSummary,
     this.link = link;
 };
+
+
