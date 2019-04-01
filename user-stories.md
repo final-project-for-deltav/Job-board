@@ -1,23 +1,30 @@
 MVP
 
-As a developer, I want to create a navbar so that the users are able to easily navigate. 
+As a developer, I want to create a navbar so the users are able to easily navigate between pages. 
 
-As a customer I want to be able to pay to sponser my listing so that it is seen by the maximum amount of people
+As an employer, I want to be able to pay to sponser my listing so that it is seen by the maximum amount of people.
 
-As a deveoloper I want to add a true/false property for to our jobs object so that we can create sponsered posts awd
+As a develpoer, I want to add a true/false property for to our jobs object so that we can create sponsered posts. 
 
-As a developer, I want to create a function that sorts/renders objects by specific properties so that my code stays orginaized. 
+As a developer, I want to create function that randomizes the jobs array so that we can display the jobs unordered and random way. 
 
-As a developer, I want to build a jobs constructor so that the jobs data is easy to manange.
+As a developer, I want to create a function that sorts/renders objects by the city so the user can narrow down their search for relevancy. 
 
-As an employer/customer, I would like a simple form to add new jobs to the board, so that I dont spend a lot of unnessisary time on the website. 
+As a user, I want to be able to sort jobs by city so the I can have a more revelant search. 
+ 
+As a developer, I want to build a jobs constructor so that we can have dynamically add new jobs. 
+
+As an employer, I would like a form to add new jobs to the board without needing additional assistance. 
 
 
-STRECH
 
 
-As a user, I would like a minimalistic design because I don't want to become overwelmed with distractions.
+STRETCH
 
+
+<!-- As a user, I would like a minimalistic design because I don't want to become overwelmed with distractions. -->
+
+Accessability.
 As an employer, I would like to share additional information about my company, so that users can determine if they are a good fit.
 
 As a user, I would like an easy way to navigate the job board so that I can get the most value of my time. 
