@@ -1,0 +1,59 @@
+body {
+
+}
+nav {
+width: 100%; 
+}
+
+.half {
+    width: 50%; 
+    float: left; 
+    box-sizing: border-box;
+}
+
+.third {
+    width: 33.33%; 
+    float: left; 
+    box-sizing: border-box;
+}
+
+.fifth {
+    width: 20%; 
+    box-sizing: border-box;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+.card {
+font-family: 'Roboto Condensed', sans-serif;
+text-align: left; 
+border-radius: 5px; 
+}
+
+.card h1 {
+text-transform: capitalize;
+font-size: 25px;
+text-decoration: underline;
+}
+\
+.card h2 {
+text-transform: capitalize;
+}
+
+.card p {
+font-size: 15px;
+}
+
+.apply {
+ color: #2ba84a;
+ font-size: 18px;
+}
+
+
+
+/* .savejob {
+
+} */
+
+/* */
