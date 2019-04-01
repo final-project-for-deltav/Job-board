@@ -1,0 +1,48 @@
+nav {
+    background-color: #eaeaea;
+    height: 20px;
+    text-align: center;
+}
+
+header {
+    clear: both;
+    overflow: hidden;
+}
+
+header section {
+    background-color: #d8d8d8;
+    width: 60%;
+    height: 350px;
+    float: left;
+    text-align: center;
+}
+
+header img {
+    background-color: #939393;
+    float: left;
+    width: 40%;
+    height: 350px;
+}
+
+.sponsored {
+    background-color: #eaeaea;
+    height: 200px;
+    text-align: center;
+}
+
+.job {
+    background-color:  #d8d8d8;
+    height: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color:  #939393;
+    height: 200px;
+    text-align: center;
+}
+
+.footer-section {
+    width: 33.33%;
+    height: 200px;
+}
