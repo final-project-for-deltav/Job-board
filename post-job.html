@@ -19,18 +19,18 @@
       <img src="" alt="">
   </header>
   <main>
-    <form class="post-job-form">
+    <form id="post-job-form" class="post-job-form">
       <label class="post-job-form__label" for="company-name">Company Name
-        <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name">
+        <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name" required>
       </label>
       <label class="post-job-form__label" for="job-title">Job Title
-        <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title">
+        <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title" required>
       </label>
       <label class="post-job-form__label" for="job-summary">Job Summary
-        <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary"></textarea>
+        <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary" maxlength="200" required></textarea>
       </label>
       <label class="post-job-form__label" for="compensation-amount">Compensation
-        <input id="compensation-amount" class="post-job-form__input" type="text" placeholder="50,000">
+        <input id="compensation-amount" class="post-job-form__input" type="number" placeholder="50000" required>
         <select id="compensation-frequency" class="compensation-frequency">
           <option value="yearly">Yearly</option>
           <option value="hourly">Hourly</option>
@@ -39,13 +39,13 @@
         </select>
       </label>
       <label class="post-job-form__label" for="application-link">Application Link
-        <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">
+        <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link" required>
       </label>
       <label class="post-job-form__label" for="city">City
-        <input id="city" class="post-job-form__input" type="text" placeholder="City">
+        <input id="city" class="post-job-form__input" type="text" placeholder="City" required>
       </label>
       <label class="post-job-form__label" for="about-company">About Company
-        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company"></textarea>
+        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company" maxlength="200" required></textarea>
       </label>
       <label class="post-job-form__label" for="sponsored">
         <input id="sponsored" class="post-job-form__input" type="checkbox">Sponsored Job
@@ -58,5 +58,7 @@
       <section class="footer-section"></section>
       <section class="footer-section"></section>
   </footer>
+  <script src="./js/app.js"></script>
+  <script src="./js/newListingForm.js"></script>
 </body>
 </html>
