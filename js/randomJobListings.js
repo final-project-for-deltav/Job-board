@@ -15,6 +15,7 @@ function createJobCard(parent, title, name, loc, pay, desc, link) {
   div.className = 'card third shadow';
   var jobTitle = createEl('h1');
   var companyName = createEl('h2');
+  var locationDiv = createEl('div');
   var location = createEl('h2');
   location.className = 'city';
   var mapMarker = createEl('i');
@@ -23,21 +24,23 @@ function createJobCard(parent, title, name, loc, pay, desc, link) {
   compensation.className = 'pay';
   var jobSummary = createEl('p');
   var jobLink = createEl('a');
+  jobLink.setAttribute('href', link);
   var ad = createEl('i');
   ad.className = 'fas fa-ad';
 
   jobTitle.innerText = title;
   companyName.innerText = name;
-  location.appendChild(mapMarker);
   location.innerText = loc;
   compensation.innerText = pay;
   jobSummary.innerText = desc;
-  jobLink.innerText = link;
+  jobLink.innerText = 'Apply Here';
 
   parentEl.appendChild(div);
   div.appendChild(jobTitle);
   div.appendChild(companyName);
-  div.appendChild(location);
+  div.appendChild(locationDiv);
+  locationDiv.appendChild(mapMarker);
+  locationDiv.appendChild(location);
   div.appendChild(compensation);
   div.appendChild(jobSummary);
   div.appendChild(jobLink);
