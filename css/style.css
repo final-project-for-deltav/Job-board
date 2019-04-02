@@ -16,7 +16,6 @@ text-align: center;
 color: #fff; 
 }
 nav h1 {
-    /* display: inline-block; */
     width: 100px; 
     float: left; 
 }
@@ -77,6 +76,7 @@ header img{
 max-width: 100%; 
 height: auto; 
 }
+
 .half {
     width: 50%; 
     float: left; 
@@ -84,31 +84,25 @@ height: auto;
 }
 
 .third {
-    width: 33.33%; 
+    width: 33.33%;
     background-color: #fff; 
     float: left; 
     box-sizing: border-box;
 }
+
 .left {
     float: left; 
 }
+
 .fifth {
     width: 20%; 
     box-sizing: border-box;
 }
+
 .shadow {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
-.sponsored {
-    background-color: #fff;
-    margin-top: 15px; 
-    width: 100%;
-    padding: 2px 5px; 
-    text-align: center;
-    padding: 5px 10px; 
-    clear: both;
-    overflow: hidden;
-}
+
 .sponsored h1 {
     text-transform: capitalize;
 }
@@ -124,21 +118,22 @@ height: auto;
     padding: 15px 0 0;
 }
 
+.sponsored,
 .job {
-    height: auto;
-    text-align: center;
     column-count: 3;
-    column-gap: 15px;
     width: 90%;
     margin: auto;
     padding: 0 0 30px;
     box-sizing: border-box;
 }
 
+.sponsored {
+    height: 400px;
+}
+
 .card {
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: left;
-    border-radius: 5px; 
+    border-radius: 5px;
     padding: 15px;
     width: 100%;
     margin: 15px auto 0;
@@ -148,24 +143,30 @@ height: auto;
 }
 
 .card h1 {
-text-transform: capitalize;
-font-size: 25px;
-text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 .card h2 {
-text-transform: capitalize;
-
+    text-transform: capitalize;
 }
 
 .card p {
-font-size: 15px;
-margin-top: -5px; 
+    font-size: 15px;
+    margin: 5px 0;
 }
 .card a {
     color: #2ba84a;
-    text-decoration: none; 
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
 }
+
+.fa-ad {
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         background-color: #124559;
@@ -204,10 +205,6 @@ margin-top: -5px;
 .pay {
     color: #2ba84a;
     font-size: 20px;
-}
-.apply {
- color: #2ba84a;
- font-size: 18px;
 }
 
 footer {
