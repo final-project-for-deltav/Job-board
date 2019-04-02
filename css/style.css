@@ -133,7 +133,7 @@ text-transform: capitalize;
 font-size: 25px;
 text-decoration: underline;
 }
-\
+
 .card h2 {
 text-transform: capitalize;
 
@@ -167,8 +167,18 @@ margin-top: -5px;
         height: auto; 
     }
   }
+
+.card div {
+    margin-bottom: 15px;
+    color: #124559;
+}
+
+.card div > * {
+    display: inline;
+}
+
 .city {
-    margin-top: -10px; 
+    margin-left: 10px;
     color: #777; 
     font-size: 14px; 
 }
