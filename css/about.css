@@ -29,19 +29,17 @@ nav {
     }
 
     .section-topA {
-        width: 64%;
-        background-color: #888;
-        height: 400px;
+        width: 100%;
+        background-color: #999;
+        height: 200px;
         float: left;
-        margin: 5px;
     }
 
     .section-topB {
-        width: 34%;
-        background-color: #999;
-        height: 400px;
+        width: 20%;
+        height: 50px;
+        background-color: whitesmoke;
         float: left;
-        margin: 5px;
     }
 
     footer {
