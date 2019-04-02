@@ -12,7 +12,7 @@ function createEl(tag) {
 function createJobCard(parent, title, name, loc, pay, desc, link) {
   var parentEl = document.getElementById(parent);
   var div = createEl('div');
-  div.className = 'card third shadow';
+  div.className = 'card shadow';
   var jobTitle = createEl('h1');
   var companyName = createEl('h2');
   var locationDiv = createEl('div');

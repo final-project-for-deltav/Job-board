@@ -18,7 +18,7 @@ if (Job.all.length < 1) {
   var reliantEnergy = new Job(
     'Reliant Energy',
     'Entry Level Web Developer',
-    '$65,000',
+    '$65000 yearly',
     false,
     'Iowa City',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -29,7 +29,7 @@ if (Job.all.length < 1) {
   var redToad = new Job(
     'Red Toad Dynamic Marketing',
     'Entry Level Web Developer',
-    '$70,000',
+    '$70000 yearly',
     true,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque, at interdum elit porttitor a. Phasellus id posuere.',
@@ -40,7 +40,7 @@ if (Job.all.length < 1) {
   var kornellCollege = new Job(
     'Kornell College',
     'Full Time Web Developer',
-    '$60,000',
+    '$60000 yearly',
     false,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque, at interdum elit porttitor a. Phasellus id posuere.',
@@ -51,7 +51,7 @@ if (Job.all.length < 1) {
   var greenCompass = new Job(
     'Green Compass',
     'Front-End Web Developer',
-    '$60,000',
+    '$60000 yearly',
     false,
     'Des Moines',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque.',
@@ -61,7 +61,7 @@ if (Job.all.length < 1) {
   var maxAmericanEnergy = new Job(
     'Max American Energy',
     'Software Engineer',
-    '$72,000',
+    '$72000 yearly',
     false,
     'Des Moines',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque, at interdum elit porttitor a. Phasellus id posuere.',
@@ -72,7 +72,7 @@ if (Job.all.length < 1) {
   var DeltaZ = new Job(
     'DeltaZ',
     'Teacher Assistant',
-    '50,000',
+    '50000 yearly',
     false,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -83,7 +83,7 @@ if (Job.all.length < 1) {
   var NewMarket = new Job(
     'NewMarket',
     'Director Of Marketing',
-    '80,000',
+    '80000 yearly',
     true,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan placerat eros, et finibus diam hendrerit quis. Sed quam nunc, lobortis id.',
@@ -94,7 +94,7 @@ if (Job.all.length < 1) {
   var Acme = new Job(
     'Acme',
     'UX Designer',
-    '45,000',
+    '45000 yearly',
     false,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan placerat eros, et finibus diam hendrerit quis. Sed quam nunc, lobortis id.',
@@ -105,7 +105,7 @@ if (Job.all.length < 1) {
   var HelloFresh = new Job(
     'HelloFresh',
     'Administrative Assistant',
-    '61,000',
+    '61000 yearly',
     true,
     'Iowa City',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum laoreet libero, et posuere.',
@@ -116,7 +116,7 @@ if (Job.all.length < 1) {
   var Zappy = new Job(
     'Zappy',
     'Recruiter',
-    '83,000',
+    '83000 yearly',
     true,
     'Des Moines',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum laoreet libero, et posuere.',
