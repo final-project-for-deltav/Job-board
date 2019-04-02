@@ -4,33 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+   <link rel="stylesheet" href="css/form.css"> 
   <title>Document</title>
 </head>
 <body>
     <nav>
          <h1>navbar</h1> 
          <a href = "./aboutUs.html">About us </a>
-             <a href = "./index.html">Home </a>
-           
+         <a href = "./index.html">Home </a>   
     </nav>
-  <header>
-      <section>section</section>
-      <img src="" alt="">
-  </header>
+
   <main>
-    <form class="post-job-form">
+    <form class="post-job-form shadow">
+      <div class = "form-wrapper">
+        <div class = "half left">
+    <form id="post-job-form" class="post-job-form">
       <label class="post-job-form__label" for="company-name">Company Name
-        <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name">
+        <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name" required>
       </label>
+    </div>
+    <div class = "half left">
       <label class="post-job-form__label" for="job-title">Job Title
-        <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title">
+        <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title" required>
       </label>
+      </div>
+    </div>
+
+    <div class = "form-wrapper">
+        <div class = "half left">
       <label class="post-job-form__label" for="job-summary">Job Summary
-        <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary"></textarea>
+        <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary" maxlength="200" required></textarea>
       </label>
+      </div>
+      <div class = "half left">
       <label class="post-job-form__label" for="compensation-amount">Compensation
-        <input id="compensation-amount" class="post-job-form__input" type="text" placeholder="50,000">
+        <input id="compensation-amount" class="post-job-form__input" type="number" placeholder="50000" required>
         <select id="compensation-frequency" class="compensation-frequency">
           <option value="yearly">Yearly</option>
           <option value="hourly">Hourly</option>
@@ -38,25 +47,65 @@
           <option value="monthly">Monthly</option>
         </select>
       </label>
-      <label class="post-job-form__label" for="application-link">Application Link
-        <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">
-      </label>
-      <label class="post-job-form__label" for="city">City
-        <input id="city" class="post-job-form__input" type="text" placeholder="City">
-      </label>
+       </div>
+      </div>
+
+      <div class = "form-wrapper">
+          <div class = "half left">
+            <label class="post-job-form__label" for="application-link">Application Link
+              <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">
+            </label>
+         </div>
+          <div class = "half left">
+            <label class="post-job-form__label" for="city">City
+              <input id="city" class="post-job-form__input" type="text" placeholder="City">
+            </label>
+          </div>
+      <div class = "form-wrapper">
+      <div class = "half left">
       <label class="post-job-form__label" for="about-company">About Company
-        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company"></textarea>
+        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company" maxlength="200" required></textarea>
       </label>
+      </div>
+      <div class = "half left">
       <label class="post-job-form__label" for="sponsored">
         <input id="sponsored" class="post-job-form__input" type="checkbox">Sponsored Job
       </label>
-      <input id="post-job-form__submit" type="submit" value="Post Job">
+      </div>
+      </div>
+      <div class = "form-wrapper">
+      <input id="post-job-form__submit" class ="button" type="submit" value="Post Job">
+      </div>
     </form>
   </main>
+
+
+
+
   <footer>
-      <section class="footer-section"></section>
-      <section class="footer-section"></section>
-      <section class="footer-section"></section>
+      <section class="footer-section third">
+          <ul><h1>Contact Us </h1>
+          <hr />
+          <li>Our Company </li>
+          <li>123 Main St </li>
+          <li>Cedar Rapids, IA </li>
+          <li>52401 </li>
+          </ul>
+      </section>
+      <section class="footer-section third">
+          <ul><h1>Connect With Us </h1>
+              <hr />
+              <li class ="left"><i class="fab fa-facebook fa-2x"></i> </li>
+              <li class ="left"><i class="fab fa-twitter-square fa-2x"></i> </li>
+              <li class ="left"><i class="fab fa-linkedin fa-2x"></i> </li>
+          </ul>
+         
+      </section>
+      <section class="footer-section third">
+
+      </section>
   </footer>
+  <script src="./js/app.js"></script>
+  <script src="./js/newListingForm.js"></script>
 </body>
 </html>

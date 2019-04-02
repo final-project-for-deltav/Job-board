@@ -5,6 +5,8 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #1a2424; 
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 nav {
 width: 100%; 
@@ -54,9 +56,6 @@ header button:hover {
     border-radius: 5px; 
     color: #fff; 
 }
-
-
-
 header h1 {
     color: #fff; 
     font-size: 38px;

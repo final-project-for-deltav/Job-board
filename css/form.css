@@ -1,3 +1,107 @@
+
 body {
-    background-color: #fff; 
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #1a2424; 
+    overflow-x: hidden; 
+    margin: 0;  
+}
+
+.half {
+    width: 50%; 
+    float: left; 
+    box-sizing: border-box;
+}
+.left {
+    float: left; 
+}
+.button {
+    background-color: #23ce6b;
+    border: 1px solid #fff; 
+    width: 200px; 
+    height: 50px; 
+    border-radius: 5px; 
+    color: #fff; 
+    font-size: 16px; 
+    margin: auto; 
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+nav {
+    width: 100%; 
+    background-color: #124559;
+    height: 60px;
+    text-align: center;
+    color: #fff; 
+}
+nav h1 {
+        /* display: inline-block; */
+        width: 100px; 
+        float: left; 
+}
+nav a {
+        float: right; 
+        margin: 24px 10px; 
+        text-decoration: none; 
+        color: #fff; 
+}
+nav a:hover {
+        color: #999;
+    
+}
+.post-job-form {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 80%;
+    height: 500px; 
+    margin: auto;
+    padding: 15px; 
+}
+.form-wrapper{
+    width: 100%; 
+    clear: both;
+    overflow: hidden;
+    padding: 15px; 
+}
+.post-job-form__input {
+    border: none; 
+    border-bottom: 2px solid #124559;
+    outline: none; 
+    width: 200px; 
+    background-color: fff;
+    margin: 15px; 
+}
+.post-job-form__input:focus{
+    border: none; 
+    border-bottom: 2px solid yellow;
+    outline: none; 
+    width: 200px; 
+    background-color: fff;
+    margin: 15px; 
+}
+footer {
+        background-color: #124559; 
+        margin-top: 15px; 
+        padding: 20px 5px; 
+        width: 100%;
+        height: auto; 
+        color: #fff;
+        clear: both;
+        text-align: center;
+        overflow: hidden;
+}
+footer h1 {
+        text-align: center;
+}
+footer li {
+        list-style: none; 
+        margin-left: 15px; 
+}
+    
+.footer-section {
+        height: 200px;
+        background-color: transparent;
+        float: left; 
+        box-sizing: border-box;
 }
