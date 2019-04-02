@@ -46,6 +46,16 @@ function createJobCard(parent, title, name, loc, pay, desc, link) {
   }
 }
 
-function renderJobCard() {
-  
+function renderJobCards(sponsored) {
+  var unsponsoredJobs = Jobs.all.filter(job => !job.sponsored);
+  var jobs = [];
+  while (jobs.length < (sponsored ? 3 : unsponsoredJobs.length)) {
+    var job = randomJob(Job.all);
+    if (!jobs.includes(job)) {
+      jobs.push(job);
+    }
+  }
+  for (var i = 0; i < jobs.length; i++) {
+    createJobCard(sponsored ? 'sponsored-cards' : 'job-cards', jobs[i].jobTitle, jobs[i].companyName, jobs[i].location, jobs[i].compensation, jobs[i].jobSummary, jobs[i].link);
+  }
 }
