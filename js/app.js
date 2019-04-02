@@ -21,9 +21,9 @@ if (Job.all.length < 1) {
     '$65,000',
     false,
     'Iowa City',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque, at interdum elit porttitor a. Phasellus id posuere.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     'https://reliantenergy.com',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque, at interdum elit porttitor a. Phasellus id posuere.'
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   );
 
   var redToad = new Job(
@@ -54,9 +54,9 @@ if (Job.all.length < 1) {
     '$60,000',
     false,
     'Des Moines',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque, at interdum elit porttitor a. Phasellus id posuere.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque.',
     'https://greencompass.com',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque, at interdum elit porttitor a. Phasellus id posuere.'
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum porta massa, eget placerat risus dapibus vitae. In volutpat aliquam neque.'
   );
   var maxAmericanEnergy = new Job(
     'Max American Energy',
