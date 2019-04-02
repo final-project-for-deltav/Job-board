@@ -1,9 +1,14 @@
+
+
+
+
 body {
-    background-image: url("../background-img.png");
     background-repeat: no-repeat;
     font-family: 'Roboto Condensed', sans-serif;
     color: #1a2424; 
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 nav {
     width: 100%; 
@@ -40,22 +45,25 @@ div {
     height: 500px;
     background-color: lightgrey;
     margin: 20px;
+    border-radius: 15px 50px;
 }
 
 .float-left {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: #fff;
-    margin: 15px;
+    margin: 25px;
     float: left;
+    border-radius: 50%;
 }
 
 .float-right {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: #fff;
-    margin: 15px;
+    margin: 25px;
     float: right;
+    border-radius: 50%;
 }
 
 
