@@ -21,6 +21,7 @@ function formHandler(e) {
   var newJobData = collectFormData();
   new Job(...newJobData);
   localStorage['Job.all'] = JSON.stringify(Job.all);
+  postJobForm.reset();
 }
 
 postJobForm.addEventListener('submit', formHandler);

@@ -26,6 +26,3 @@ if (Job.all.length < 1) {
   var HelloFresh = new Job('HelloFresh', 'Administrative Assistant', '$61,000 yearly', true, 'Iowa City', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', 'https://www.google.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam');
   var Zappy = new Job('Zappy', 'Recruiter', '$83,000 yearly', true, 'Des Moines', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', 'https://www.google.com', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam');
 }
-
-
-console.log(Job.all);
