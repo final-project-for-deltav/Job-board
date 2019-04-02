@@ -44,7 +44,7 @@ function createJobCard(parent, title, name, loc, pay, desc, link) {
   div.appendChild(compensation);
   div.appendChild(jobSummary);
   div.appendChild(jobLink);
-  if (parentEl === 'sponsored-cards') {
+  if (parent === 'sponsored-cards') {
     div.appendChild(ad);
   }
 }
