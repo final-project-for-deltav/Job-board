@@ -112,19 +112,39 @@ height: auto;
 .sponsored h1 {
     text-transform: capitalize;
 }
-.job {
-    margin-top: 15px; 
+
+.job-wrapper,
+.job-cards-heading {
     background-color:  #d8d8d8;
+}
+
+.job-cards-heading {
+    text-align: center;
+    margin: 0;
+    padding: 15px 0 0;
+}
+
+.job {
     height: auto;
     text-align: center;
-    clear: both;
-    overflow: hidden;
+    column-count: 3;
+    column-gap: 15px;
+    width: 90%;
+    margin: auto;
+    padding: 0 0 30px;
+    box-sizing: border-box;
 }
+
 .card {
-font-family: 'Roboto Condensed', sans-serif;
-text-align: left; 
-border-radius: 5px; 
-padding: 15px; 
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+    border-radius: 5px; 
+    padding: 15px;
+    width: 100%;
+    margin: 15px auto 0;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
 }
 
 .card h1 {
@@ -191,8 +211,7 @@ margin-top: -5px;
 }
 
 footer {
-    background-color: #124559; 
-    margin-top: 15px; 
+    background-color: #124559;
     padding: 20px 5px; 
     width: 100%;
     height: auto; 
