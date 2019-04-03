@@ -54,15 +54,19 @@ function createJobCardBack(parent, _id, desc, link) {
   jobLink.setAttribute('href', link);
   jobLink.setAttribute('target', 'blank');
 
-  // var cardFrontHeight = document.querySelector(`[data-_id='${_id}']`).clientHeight;
-  // div.style.height = `${cardFrontHeight}px`;
-  var rect = parentEl.getBoundingClientRect();
+  div.setAttribute('data-_id', _id);
+  var cardFronts = document.querySelectorAll(`[data-_id='${_id}']`);
+  var currentCardFront = cardFronts[cardFronts.length - 1];
+  var cardFrontHeight = currentCardFront.clientHeight;
+  div.style.height = `${cardFrontHeight}px`;
+  div.style.backfaceVisibility = 'hidden';
+  div.style.WebkitBackfaceVisibility = 'hidden';
   if (parent === 'sponsored-cards') {
-    div.style.transform = `translateY(-${parentEl.clientHeight}px)`;
+    div.style.transform = `translateY(-${parentEl.clientHeight}px) rotateY(180deg)`;
   } else {
-    div.style.transform = `translateY(-${(rect.top)}px)`;
+    div.style.transform = `translateY(-${(cardFrontHeight + 15)}px) rotateY(180deg)`;
   }
-  // div.style.transform += 'rotateY(180deg)';
+
   jobSummary.innerText = desc;
   jobLink.innerText = 'Apply Here';
 
