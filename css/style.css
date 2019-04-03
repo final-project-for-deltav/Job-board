@@ -170,14 +170,16 @@ height: auto;
     margin-bottom: 5px;
 }
 
-
-
-.card-front {
-    backface-visibility: hidden;
+.card-container,
+.card-front,
+.card-back {
+    height: 224px;
 }
 
+.card-front,
 .card-back {
     backface-visibility: hidden;
+    transition: all 1s ease;
 }
 
 .fa-ad {

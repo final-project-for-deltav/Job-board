@@ -53,7 +53,6 @@ function createJobCardFace(parent, title, name, loc, pay) {
     cardFace.appendChild(ad);
   }
   var cardFrontHeight = cardFace.clientHeight;
-  cardFace.style.height = `${cardFrontHeight}px`;
 }
 
 function createJobCardBack(parent, desc, link) {
@@ -75,9 +74,7 @@ function createJobCardBack(parent, desc, link) {
 
   var cardFront = cardBack.previousSibling;
   var cardFrontHeight = cardFront.clientHeight;
-  cardBack.style.height = `${cardFrontHeight}px`;
   cardBack.style.transform = `translateY(-${parentEl.parentNode.id === 'sponsored-cards' ? (parentEl.parentNode.clientHeight - 15) : (cardFrontHeight + 15)}px) rotateY(180deg)`;
-  parentEl.style.height = `${cardFrontHeight}px`;
 }
 
 function renderJobCards(sponsored) {
