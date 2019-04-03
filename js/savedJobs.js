@@ -5,7 +5,7 @@ function addheart() {
   var cardBacks = document.getElementsByClassName('card-back');
   var hearts = document.getElementsByClassName('fa-heart');
 
-//   console.log(cards);
+  //   console.log(cards);
   for (var i = 0; i < cardBacks.length; i++) {
     cardBacks[i].appendChild(heart.cloneNode(true));
     hearts[i].addEventListener('click', savedJobHandler);
@@ -27,7 +27,26 @@ function savedJobHandler(e) {
   console.log(savedJobs);
 
 
-
+}
+function renderSavedJobs() {
+  var jobsDiv = document.getElementById('saved-jobs');
+  for (var i = 0; i < savedJobs.length; i++) {
+    console.log(savedJobs);
+    var jobTitle = document.createElement('h1');
+    var companyName = document.createElement('h2');
+    var jobLink = document.createElement('a');
+    var ellink = savedJobs[i].link;
+    jobLink.setAttribute('href', ellink);
+    jobLink.setAttribute('target', 'blank');
+    jobLink.innerText = 'Apply Here';
+    jobTitle.innerText = savedJobs[i].jobTitle;
+    companyName.innerText = savedJobs[i].companyName;
+    jobsDiv.appendChild(jobTitle);
+    jobsDiv.appendChild(companyName);
+    jobsDiv.appendChild(jobLink);
+  }
+}
+renderSavedJobs();
 
 
 
