@@ -70,10 +70,6 @@ function createJobCardBack(parent, desc, link) {
   parentEl.appendChild(cardBack);
   cardBack.appendChild(jobSummary);
   cardBack.appendChild(jobLink);
-
-  var cardFront = cardBack.previousSibling;
-  var cardFrontHeight = cardFront.clientHeight;
-  // cardBack.style.transform = `translateY(-${parentEl.parentNode.id === 'sponsored-cards' ? (parentEl.parentNode.clientHeight - 15) : (cardFrontHeight + 15)}px) rotateY(180deg)`;
 }
 
 function renderJobCards(sponsored) {
