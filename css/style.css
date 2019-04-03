@@ -170,6 +170,16 @@ height: auto;
     margin-bottom: 5px;
 }
 
+
+
+.card-front {
+    backface-visibility: hidden;
+}
+
+.card-back {
+    backface-visibility: hidden;
+}
+
 .fa-ad {
     font-size: 20px;
 }
