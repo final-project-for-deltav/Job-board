@@ -1,6 +1,7 @@
 'use strict';
 
 function Job(companyName, jobTitle, compensation, sponsored, location, jobSummary, link, aboutCompany) {
+  this._id = Job.all.length,
   this.companyName = companyName,
   this.jobTitle = jobTitle,
   this.compensation = compensation,
