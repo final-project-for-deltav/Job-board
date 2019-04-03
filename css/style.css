@@ -182,6 +182,10 @@ height: auto;
     transition: all 1s ease;
 }
 
+.card-back {
+    transform: translateY(-224px) rotateY(180deg);
+}
+
 .sponsored-job {
     width: 32.5%;
     float: left;
