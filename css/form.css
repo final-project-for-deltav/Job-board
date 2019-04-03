@@ -4,6 +4,15 @@ body {
     color: #1a2424; 
     overflow-x: hidden; 
     margin: 0;  
+    background-color:  #fff
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #555; 
 }
 
 .half {
@@ -13,6 +22,12 @@ body {
 }
 .left {
     float: left; 
+}
+.clear{
+    clear: both; 
+}
+.in-line {
+    display: inline-block;
 }
 .button {
     background-color: #23ce6b;
@@ -36,7 +51,6 @@ nav {
     color: #fff; 
 }
 nav h1 {
-        /* display: inline-block; */
         width: 100px; 
         float: left; 
 }
@@ -50,35 +64,94 @@ nav a:hover {
         color: #999;
     
 }
-.post-job-form {
-    -webkit-appearance: none;
-    text-align: center;
-    width: 80%;
-    height: 500px; 
-    margin: auto;
-    padding: 15px; 
-}
-.form-wrapper{
+.row {
     width: 100%; 
     clear: both;
     overflow: hidden;
-    padding: 15px; 
+}
+textarea {
+ width: 620px; 
+ height: 125px; 
+ outline: none; 
+ border: 2px solid #124559;
+ border-radius: 5px; 
+ display:block;
+ float: left; 
+ margin-bottom: 20px; 
+}
+textarea:focus {
+    width: 350px; 
+    height: 125px; 
+    outline: none; 
+    border-radius: 5px; 
+   }
+.post-job-form {
+    -webkit-appearance: none;
+    background-color: #fff;
+    border-radius: 5px; 
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    clear: both; 
+    overflow: hidden;
+    margin: auto; 
+}
+.fullWidth {
+    width: 100%; 
+    float: left; 
 }
 .post-job-form__input {
     border: none; 
-    border-bottom: 2px solid #124559;
+    border: 2px solid #124559;
+    border-radius: 5px; 
+    height: 40px; 
     outline: none; 
-    width: 200px; 
+    width: 300px; 
     background-color: fff;
-    margin: 15px; 
+    margin-right: 200px; 
+    display:block;
+    float: left; 
+    margin-bottom: 30px; 
+}
+.post-job-form__label{
+    display: block;
+    float: left; 
+    font-size: 12px; 
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    margin-bottom: 5px; 
+    /* background-color: #124559; */
 }
 .post-job-form__input:focus{
     border: none; 
     border-bottom: 2px solid yellow;
+}
+.checkbox {
+    float: left; 
+}
+select {
+    float: left; 
+    width: 100px; 
     outline: none; 
+    border: 2px solid #124559;
+    border-radius: 5px; 
+}
+.payInput {
+    font-size: 12px; 
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    margin-bottom: 5px; 
+    border: none; 
+    border-bottom: 2px solid #124559;
     width: 200px; 
     background-color: fff;
-    margin: 15px; 
+    display:block;
+    float: left;
+    margin-right: 5px; 
+    /* background-color: #23ce6b; */
+    margin-bottom: 30px; 
+
 }
 footer {
         background-color: #124559; 
@@ -98,7 +171,17 @@ footer li {
         list-style: none; 
         margin-left: 15px; 
 }
-    
+.checkBoxLabel {
+    font-size: 12px; 
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-right: 10px; 
+}    
+.checkBox{
+    margin-top: 20px;
+    border: 2px solid #124559;
+   
+}    
 .footer-section {
         height: 200px;
         background-color: transparent;
