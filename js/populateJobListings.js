@@ -52,7 +52,6 @@ function createJobCardFace(parent, title, name, loc, pay) {
   if (parentEl.parentNode.id === 'sponsored-cards') {
     cardFace.appendChild(ad);
   }
-  var cardFrontHeight = cardFace.clientHeight;
 }
 
 function createJobCardBack(parent, desc, link) {
@@ -94,9 +93,7 @@ function renderJobCards(sponsored) {
   if (sponsored) {
     var cardContainers = Object.values(document.getElementsByClassName('card-container'));
     for (var i = 0; i < cardContainers.length; i++) {
-      if (i > 0) {
-        cardContainers[i].style.transform = `translateX(-${i > 1 ? (cardContainers[i].clientWidth + 15) * 2 : (cardContainers[i].clientWidth + 15)}px)`;
-      }
+      cardContainers[i].classList.add('sponsored-job');
     }
   }
 }
