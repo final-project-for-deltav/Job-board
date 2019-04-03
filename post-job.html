@@ -14,72 +14,67 @@
          <a href = "./aboutUs.html">About us </a>
          <a href = "./index.html">Home </a>   
     </nav>
-
   <main>
-
-    <form id="post-job-form" class="post-job-form shadow">
-      <label class="post-job-form__label" for="company-name">Company Name
-        <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name" required>
-      </label>
-    </div>
-    <div class = "half left">
-      <label class="post-job-form__label" for="job-title">Job Title
-        <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title" required>
-      </label>
-      </div>
-    </div>
-
-    <div class = "form-wrapper">
-        <div class = "half left">
-      <label class="post-job-form__label" for="job-summary">Job Summary
-        <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary" maxlength="200" required></textarea>
-      </label>
-      </div>
-      <div class = "half left">
-      <label class="post-job-form__label" for="compensation-amount">Compensation
-        <input id="compensation-amount" class="post-job-form__input" type="number" placeholder="50000" required>
-        <select id="compensation-frequency" class="compensation-frequency">
-          <option value="yearly">Yearly</option>
-          <option value="hourly">Hourly</option>
-          <option value="weekly">Weekly</option>
-          <option value="monthly">Monthly</option>
-        </select>
-      </label>
-       </div>
-      </div>
-
-      <div class = "form-wrapper">
-          <div class = "half left">
-            <label class="post-job-form__label" for="application-link">Application Link
-              <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">
-            </label>
+      <h1> Find the perfect candidate for your company!</h1>
+      <h2> Fill out the information in this form to add your job listing to the jobs board.</h2>
+    <form id="post-job-form" class="post-job-form">
+       <div class = "row">
+          <div class = "left half">
+            <label class="post-job-form__label" for="company-name">Company Name</label>
+            <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name" required>
          </div>
-          <div class = "half left">
-            <label class="post-job-form__label" for="city">City
-              <input id="city" class="post-job-form__input" type="text" placeholder="City">
-            </label>
+         <div class = "left half">
+            <label class="post-job-form__label" for="job-title">Job Title </label>
+            <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title" required>
+         </div>
+        </div>
+        <div class = "row">
+          <div class ="left half"> 
+            <label class="post-job-form__label" for="city">City</label>
+            <input id="city" class="post-job-form__input" type="text" placeholder="City">
           </div>
-      <div class = "form-wrapper">
-      <div class = "half left">
-      <label class="post-job-form__label" for="about-company">About Company
-        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company" maxlength="200" required></textarea>
-      </label>
+          <div class ="left half"> 
+              <label class="post-job-form__label" for="application-link">Application Link </label>
+              <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">
+          </div>
+        </div>
+          <div class = "row">
+           <div class = "left clear">
+            <label class="post-job-form__label" for="job-summary">Job Summary </label>
+            <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary" maxlength="200" required></textarea>
+          </div>
+        </div>
+        <div class = "row">
+          <div class ="left half clear"> 
+            <label class="post-job-form__label" for="compensation-amount">Compensation </label>
+              <div class ="fullWidth">
+                <input id="compensation-amount" class = "payInput" type="number" placeholder="50000" required>
+                <select id="compensation-frequency" class="compensation-frequency">
+                  <option value="yearly">Yearly</option>
+                  <option value="hourly">Hourly</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly">Monthly</option>
+                </select>
+              </div>
+            </div>
+          <div class ="half "> 
+              <div class ="fullWidth">
+                  <label class="left checkBoxLabel" for="sponsored"> Is this job sponsored? </label>
+                  <input id="sponsored" class="left checkBox" type="checkbox">
+              </div>
+          </div>
+        </div>
+      <div class = "row">
+          <div class ="left half clear"> 
+            <label class="post-job-form__label" for="about-company">About Company </label>
+            <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company" maxlength="200" required></textarea>
+          </div>
       </div>
-      <div class = "half left">
-      <label class="post-job-form__label" for="sponsored">
-        <input id="sponsored" class="post-job-form__input" type="checkbox">Sponsored Job
-      </label>
-      </div>
-      </div>
-      <div class = "form-wrapper">
-      <input id="post-job-form__submit" class ="button" type="submit" value="Post Job">
+      <div class ="clear"> 
+        <input id="post-job-form__submit" class ="button" type="submit" value="Post Job">
       </div>
     </form>
   </main>
-
-
-
-
   <footer>
       <section class="footer-section third">
           <ul><h1>Contact Us </h1>
@@ -91,16 +86,15 @@
           </ul>
       </section>
       <section class="footer-section third">
-          <ul><h1>Connect With Us </h1>
+          <ul>
+            <h1>Connect With Us </h1>
               <hr />
               <li class ="left"><i class="fab fa-facebook fa-2x"></i> </li>
               <li class ="left"><i class="fab fa-twitter-square fa-2x"></i> </li>
               <li class ="left"><i class="fab fa-linkedin fa-2x"></i> </li>
           </ul>
-         
       </section>
       <section class="footer-section third">
-
       </section>
   </footer>
   <script src="./js/app.js"></script>
