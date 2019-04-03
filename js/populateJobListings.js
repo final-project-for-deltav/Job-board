@@ -24,7 +24,7 @@ function createJobCardFace(parent, title, name, loc, pay) {
   var elements = document.querySelectorAll(`[data-_id='${parent}']`);
   var parentEl = elements[elements.length - 1];
   var cardFace = createEl('div');
-  cardFace.className = 'card shadow';
+  cardFace.className = 'card shadow card-front';
   var jobTitle = createEl('h1');
   var companyName = createEl('h2');
   var locationDiv = createEl('div');
@@ -53,14 +53,13 @@ function createJobCardFace(parent, title, name, loc, pay) {
     cardFace.appendChild(ad);
   }
   var cardFrontHeight = cardFace.clientHeight;
-  cardFace.style.height = `${cardFrontHeight}px`;
 }
 
 function createJobCardBack(parent, desc, link) {
   var elements = document.querySelectorAll(`[data-_id='${parent}']`);
   var parentEl = elements[elements.length - 1];
   var cardBack = createEl('div');
-  cardBack.className = 'card shadow';
+  cardBack.className = 'card shadow card-back';
   var jobSummary = createEl('p');
   var jobLink = createEl('a');
   jobLink.setAttribute('href', link);
@@ -75,11 +74,7 @@ function createJobCardBack(parent, desc, link) {
 
   var cardFront = cardBack.previousSibling;
   var cardFrontHeight = cardFront.clientHeight;
-  cardBack.style.height = `${cardFrontHeight}px`;
-  cardBack.style.backfaceVisibility = 'hidden';
-  cardBack.style.WebkitBackfaceVisibility = 'hidden';
   cardBack.style.transform = `translateY(-${parentEl.parentNode.id === 'sponsored-cards' ? (parentEl.parentNode.clientHeight - 15) : (cardFrontHeight + 15)}px) rotateY(180deg)`;
-  parentEl.style.height = `${cardFrontHeight}px`;
 }
 
 function renderJobCards(sponsored) {
@@ -100,7 +95,7 @@ function renderJobCards(sponsored) {
     var cardContainers = Object.values(document.getElementsByClassName('card-container'));
     for (var i = 0; i < cardContainers.length; i++) {
       if (i > 0) {
-        cardContainers[i].style.transform = `translateX(-${400}px)`;
+        cardContainers[i].style.transform = `translateX(-${i > 1 ? (cardContainers[i].clientWidth + 15) * 2 : (cardContainers[i].clientWidth + 15)}px)`;
       }
     }
   }
