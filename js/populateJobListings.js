@@ -9,7 +9,7 @@ function createEl(tag) {
   return document.createElement(tag);
 }
 
-function createJobCard(parent, title, name, loc, pay, desc, link) {
+function createJobCardFace(parent, _id, title, name, loc, pay) {
   var parentEl = document.getElementById(parent);
   var div = createEl('div');
   div.className = 'card shadow';
@@ -22,18 +22,14 @@ function createJobCard(parent, title, name, loc, pay, desc, link) {
   mapMarker.className = 'fas fa-map-marker-alt';
   var compensation = createEl('p');
   compensation.className = 'pay';
-  var jobSummary = createEl('p');
-  var jobLink = createEl('a');
-  jobLink.setAttribute('href', link);
   var ad = createEl('i');
   ad.className = 'fas fa-ad';
 
+  div.setAttribute('data-_id', _id);
   jobTitle.innerText = title;
   companyName.innerText = name;
   location.innerText = loc;
   compensation.innerText = pay;
-  jobSummary.innerText = desc;
-  jobLink.innerText = 'Apply Here';
 
   parentEl.appendChild(div);
   div.appendChild(jobTitle);
@@ -42,11 +38,37 @@ function createJobCard(parent, title, name, loc, pay, desc, link) {
   locationDiv.appendChild(mapMarker);
   locationDiv.appendChild(location);
   div.appendChild(compensation);
-  div.appendChild(jobSummary);
-  div.appendChild(jobLink);
   if (parent === 'sponsored-cards') {
     div.appendChild(ad);
   }
+  var cardFrontHeight = div.clientHeight;
+  div.style.height = `${cardFrontHeight}px`;
+}
+
+function createJobCardBack(parent, _id, desc, link) {
+  var parentEl = document.getElementById(parent);
+  var div = createEl('div');
+  div.className = 'card shadow';
+  var jobSummary = createEl('p');
+  var jobLink = createEl('a');
+  jobLink.setAttribute('href', link);
+  jobLink.setAttribute('target', 'blank');
+
+  // var cardFrontHeight = document.querySelector(`[data-_id='${_id}']`).clientHeight;
+  // div.style.height = `${cardFrontHeight}px`;
+  var rect = parentEl.getBoundingClientRect();
+  if (parent === 'sponsored-cards') {
+    div.style.transform = `translateY(-${parentEl.clientHeight}px)`;
+  } else {
+    div.style.transform = `translateY(-${(rect.top)}px)`;
+  }
+  // div.style.transform += 'rotateY(180deg)';
+  jobSummary.innerText = desc;
+  jobLink.innerText = 'Apply Here';
+
+  parentEl.appendChild(div);
+  div.appendChild(jobSummary);
+  div.appendChild(jobLink);
 }
 
 function renderJobCards(sponsored) {
@@ -59,11 +81,10 @@ function renderJobCards(sponsored) {
       }
     }
   }
-  console.log(jobs);
   jobs.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
-  console.log(jobs);
   for (var i = 0; i < jobs.length; i++) {
-    createJobCard(sponsored ? 'sponsored-cards' : 'job-cards', jobs[i].jobTitle, jobs[i].companyName, jobs[i].location, jobs[i].compensation, jobs[i].jobSummary, jobs[i].link);
+    createJobCardFace(sponsored ? 'sponsored-cards' : 'job-cards', jobs[i]._id, jobs[i].jobTitle, jobs[i].companyName, jobs[i].location, jobs[i].compensation);
+    createJobCardBack(sponsored ? 'sponsored-cards' : 'job-cards', jobs[i]._id, jobs[i].jobSummary, jobs[i].link);
   }
 }
 

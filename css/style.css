@@ -123,12 +123,15 @@ height: auto;
     column-count: 3;
     width: 90%;
     margin: auto;
-    padding: 0 0 30px;
     box-sizing: border-box;
 }
 
 .sponsored {
-    height: 400px;
+    height: 350px;
+}
+
+.job {
+    padding-bottom: 30px;
 }
 
 .card {
