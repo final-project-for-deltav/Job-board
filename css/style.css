@@ -123,12 +123,20 @@ height: auto;
     column-count: 3;
     width: 90%;
     margin: auto;
-    padding: 0 0 30px;
     box-sizing: border-box;
 }
 
 .sponsored {
-    height: 400px;
+    padding-top: 15px;
+    height: 300px;
+}
+
+.job {
+    padding-bottom: 30px;
+}
+
+.card-container {
+    margin-bottom: 15px;
 }
 
 .card {
@@ -136,7 +144,6 @@ height: auto;
     border-radius: 5px;
     padding: 15px;
     width: 100%;
-    margin: 15px auto 0;
     display: inline-block;
     box-sizing: border-box;
     background-color: #fff;
