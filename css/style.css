@@ -120,7 +120,6 @@ height: auto;
 
 .sponsored,
 .job {
-    column-count: 3;
     width: 90%;
     margin: auto;
     box-sizing: border-box;
@@ -132,6 +131,7 @@ height: auto;
 }
 
 .job {
+    column-count: 3;
     padding-bottom: 30px;
 }
 
@@ -180,6 +180,15 @@ height: auto;
 .card-back {
     backface-visibility: hidden;
     transition: all 1s ease;
+}
+
+.sponsored-job {
+    width: 32.5%;
+    float: left;
+}
+
+.sponsored-job:nth-child(2) {
+    margin: 0 1.25%;
 }
 
 .fa-ad {
