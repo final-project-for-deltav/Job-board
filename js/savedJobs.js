@@ -26,9 +26,7 @@ function savedJobHandler(e) {
   }
   console.log(savedJobs);
 
- 
-//   savedjobs.push(jobs.id);
-}
+
 
 
 
