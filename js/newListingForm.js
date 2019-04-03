@@ -6,7 +6,7 @@ function collectFormData() {
   var data = [
     document.getElementById('company-name').value,
     document.getElementById('job-title').value,
-    '$' + document.getElementById('compensation-amount').value.toFixed(2) + ' ' + document.getElementById('compensation-frequency').value,
+    '$' + parseFloat(document.getElementById('compensation-amount').value).toFixed(2) + ' ' + document.getElementById('compensation-frequency').value,
     document.getElementById('sponsored').checked,
     document.getElementById('city').value,
     document.getElementById('job-summary').value,

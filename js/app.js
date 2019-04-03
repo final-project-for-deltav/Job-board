@@ -9,6 +9,7 @@ function Job(companyName, jobTitle, compensation, sponsored, location, jobSummar
   this.jobSummary = jobSummary,
   this.aboutCompany = aboutCompany,
   this.link = link,
+  this.date = new Date(),
   Job.all.push(this);
 }
 
@@ -72,7 +73,7 @@ if (Job.all.length < 1) {
   var DeltaZ = new Job(
     'DeltaZ',
     'Teacher Assistant',
-    '50000 yearly',
+    '$50000 yearly',
     false,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
@@ -83,7 +84,7 @@ if (Job.all.length < 1) {
   var NewMarket = new Job(
     'NewMarket',
     'Director Of Marketing',
-    '80000 yearly',
+    '$80000 yearly',
     true,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan placerat eros, et finibus diam hendrerit quis. Sed quam nunc, lobortis id.',
@@ -94,7 +95,7 @@ if (Job.all.length < 1) {
   var Acme = new Job(
     'Acme',
     'UX Designer',
-    '45000 yearly',
+    '$45000 yearly',
     false,
     'Cedar Rapids',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan placerat eros, et finibus diam hendrerit quis. Sed quam nunc, lobortis id.',
@@ -105,7 +106,7 @@ if (Job.all.length < 1) {
   var HelloFresh = new Job(
     'HelloFresh',
     'Administrative Assistant',
-    '61000 yearly',
+    '$61000 yearly',
     true,
     'Iowa City',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum laoreet libero, et posuere.',
@@ -116,7 +117,7 @@ if (Job.all.length < 1) {
   var Zappy = new Job(
     'Zappy',
     'Recruiter',
-    '83000 yearly',
+    '$83000 yearly',
     true,
     'Des Moines',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum laoreet libero, et posuere.',

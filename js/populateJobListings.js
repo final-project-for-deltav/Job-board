@@ -59,6 +59,9 @@ function renderJobCards(sponsored) {
       }
     }
   }
+  console.log(jobs);
+  jobs.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
+  console.log(jobs);
   for (var i = 0; i < jobs.length; i++) {
     createJobCard(sponsored ? 'sponsored-cards' : 'job-cards', jobs[i].jobTitle, jobs[i].companyName, jobs[i].location, jobs[i].compensation, jobs[i].jobSummary, jobs[i].link);
   }
