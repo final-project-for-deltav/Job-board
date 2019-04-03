@@ -49,7 +49,7 @@ function createJobCardFace(parent, title, name, loc, pay) {
   locationDiv.appendChild(mapMarker);
   locationDiv.appendChild(location);
   cardFace.appendChild(compensation);
-  if (parent === 'sponsored-cards') {
+  if (parentEl.parentNode.id === 'sponsored-cards') {
     cardFace.appendChild(ad);
   }
   var cardFrontHeight = cardFace.clientHeight;
@@ -78,7 +78,7 @@ function createJobCardBack(parent, desc, link) {
   cardBack.style.height = `${cardFrontHeight}px`;
   cardBack.style.backfaceVisibility = 'hidden';
   cardBack.style.WebkitBackfaceVisibility = 'hidden';
-  cardBack.style.transform = `translateY(-${parent === 'sponsored-cards' ? parentEl.clientHeight : (cardFrontHeight + 15)}px) rotateY(180deg)`;
+  cardBack.style.transform = `translateY(-${parentEl.parentNode.id === 'sponsored-cards' ? (parentEl.parentNode.clientHeight - 15) : (cardFrontHeight + 15)}px) rotateY(180deg)`;
   parentEl.style.height = `${cardFrontHeight}px`;
 }
 
@@ -95,6 +95,14 @@ function renderJobCards(sponsored) {
   jobs.sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
   for (var i = 0; i < jobs.length; i++) {
     createJobCardDiv(sponsored ? 'sponsored-cards' : 'job-cards', jobs, i);
+  }
+  if (sponsored) {
+    var cardContainers = Object.values(document.getElementsByClassName('card-container'));
+    for (var i = 0; i < cardContainers.length; i++) {
+      if (i > 0) {
+        cardContainers[i].style.transform = `translateX(-${400}px)`;
+      }
+    }
   }
 }
 
