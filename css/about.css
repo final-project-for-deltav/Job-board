@@ -1,38 +1,7 @@
 body {
     background-repeat: no-repeat;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #1a2424; 
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
     background-image: url('../background1.png');
     background-repeat: repeat;
-}
-
-nav {
-    width: 100%; 
-    background-color: #124559;
-    height: 60px;
-    text-align: center;
-    color: #fff; 
-    box-sizing: border-box;
-}
-
-nav h1 {
-    width: 100px; 
-    float: left;
-    margin-bottom: 11px;
-}
-
-nav a {
-    float: right; 
-    margin: 20px 10px; 
-    text-decoration: none; 
-    color: #fff;
-}
-
-nav a:hover {
-    color: #999;
 }
 
 .company-bio {
@@ -118,4 +87,5 @@ nav a:hover {
     background-image: url(../IMG_5021.JPG);
     background-size: cover;
     background-position: center;
+    border: solid #23ce6b 5px;
 }
