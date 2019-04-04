@@ -59,15 +59,19 @@ function createJobCardBack(parent, desc, link) {
   var parentEl = elements[elements.length - 1];
   var cardBack = createEl('div');
   cardBack.className = 'card shadow card-back';
+  var jobDutiesHeading = createEl('h3');
+  jobDutiesHeading.classList.add('job-duties-heading');
   var jobSummary = createEl('p');
   var jobLink = createEl('a');
   jobLink.setAttribute('href', link);
   jobLink.setAttribute('target', 'blank');
 
+  jobDutiesHeading.innerText = 'Position Summary';
   jobSummary.innerText = desc;
   jobLink.innerText = 'Apply Here';
 
   parentEl.appendChild(cardBack);
+  cardBack.appendChild(jobDutiesHeading);
   cardBack.appendChild(jobSummary);
   cardBack.appendChild(jobLink);
 }
