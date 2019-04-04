@@ -5,52 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/filter-bar.css">
     <link rel="stylesheet" href="css/job-card-hearts.css">
-    <link rel="stylesheet" href="css/footer.css">
     <title>SmartJobs</title>
 
 </head>
 <body>
     <nav>
-        <h1>SmartJobs</h1> 
-        <a class = "employee-button" href="./post-job.html">Employers</a>
-        <span id = "saved-jobs-count"></span>
-        <a href="./savedJobs.html">My Saved Jobs</a> 
-     
+        <h1 class="company-name">SmartJobs</h1>
+        <a href="./post-job.html">Post A Job</a>
+        <span id="saved-jobs-count"></span>
+        <a href="./savedJobs.html">My Saved Jobs</a>
         <a href="./about-us.html">About Us</a>
     </nav>
-    <header>
-        <section><h1>"Don't let student debt weigh you down, find top companies who will help you pay it off!"</h1> 
-        <button class="button shadow">Find a job now!</button>
-        </section>
-        <section class="header-img">
+    <main>        
+        <header>
+            <section><h1>"Don't let student debt weigh you down, find top companies who will help you pay it off!"</h1>
+            <button class="button shadow">Find a job now!</button>
+            </section>
+            <section class="header-img">
                 <img src="./header-img.png" alt="">
-        </section>
-        
-    </header>
-    <h1 class="job-cards-heading">Find a great job with Top Companies.</h1>
-    <div class="sponsored-job-wrapper">
-        <div class='sponsored' id="sponsored-cards"></div>
-    </div>
-
-    <div class="job-wrapper">
-           
+            </section>            
+        </header>
+        <h1 class="job-cards-heading">Find a great job with Top Companies.</h1>
+        <div class="sponsored-job-wrapper">
+            <div class='sponsored' id="sponsored-cards"></div>
+        </div>    
+        <div class="job-wrapper">               
             <ul id="filter-bar" class="filter-bar">
-                    <div class="filter-by"> <p> Search By City &nbsp; <i class="fas fa-search"></i></p> </div>
-                    <li class="filter-by">
-                        <select id="filter-by__city">
-                            <option value="all-cities">All</option>
-                            <option value="des-moines">Des Moines</option>
-                            <option value="cedar-rapids">Cedar Rapids</option>
-                            <option value="iowa-city">Iowa City</option>
-                        </select>
-                    </li>
-                </ul>
-        <div class='job' id="job-cards"></div>
-    </div>
+                <div class="filter-by"><p>Search By City&nbsp;&nbsp;<i class="fas fa-search"></i></p></div>
+                <li class="filter-by">
+                    <select id="filter-by__city">
+                        <option value="all-cities">All</option>
+                        <option value="des-moines">Des Moines</option>
+                        <option value="cedar-rapids">Cedar Rapids</option>
+                        <option value="iowa-city">Iowa City</option>
+                    </select>
+                </li>
+            </ul>
+            <div class='job' id="job-cards"></div>
+        </div>
+    </main>
     <footer>
         <section class="footer-section">
             <ul>
