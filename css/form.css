@@ -35,7 +35,7 @@ h2 {
 }
 
 .button {
-    background-color: #23ce6b;
+    background-color: #2bA84a;
     border: 1px solid #fff; 
     width: 200px; 
     height: 50px; 
@@ -43,6 +43,9 @@ h2 {
     color: #fff; 
     font-size: 16px; 
     margin: auto;
+}
+.button:hover{
+    background-color: #23ce6b;
 }
 
 .shadow {
@@ -85,7 +88,6 @@ textarea {
     height: 125px; 
     outline: none; 
     border: 2px solid #124559;
-    border-radius: 5px; 
     display:block;
     float: left; 
     margin-bottom: 20px; 
@@ -95,7 +97,6 @@ textarea {
 .post-job-form {
     -webkit-appearance: none;
     background-color: #fff;
-    border-radius: 5px; 
     text-align: center;
     width: 50%;
     margin: auto;
@@ -112,7 +113,6 @@ textarea {
 
 .post-job-form__input {
     border: 2px solid #124559;
-    border-radius: 5px; 
     height: 40px; 
     outline: none; 
     width: 300px; 
@@ -136,8 +136,8 @@ textarea {
 .post-job-form__input:focus,
 textarea:focus,
 .payInput:focus {
-    border: 2px solid transparent;
-    border-bottom-color: yellow;
+    border: 2px solid #23ce6b;
+    outline: none; 
 }
 
 .checkbox {
