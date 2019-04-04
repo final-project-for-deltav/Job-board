@@ -32,11 +32,11 @@ nav a:hover {
 header {
     clear: both;
     overflow: hidden;
-    height: 400px; 
+    height: 500px; 
     color: #fff; 
+    position: relative;
 }
 header button {
-    
     background-color: #23ce6b;
     border: 1px solid #fff; 
     width: auto;
@@ -61,14 +61,16 @@ header h1 {
 }
 header section {
     width: 59%;
-    height: 350px;
+    height: 400px;
     float: left;
     text-align: center;
     box-sizing: border-box;
+    position: relative;
 }
 .header-img {
     float: left;
     width: 40%;
+    margin-top: 100px;
     height: 350px;
     box-sizing: border-box;
 }
@@ -107,9 +109,16 @@ height: auto;
     text-transform: capitalize;
 }
 
-.job-wrapper,
+.sponsored-job-wrapper{
+    background-color: #124559;
+}
+.job-wrapper{
+    padding-top: 15px;
+    background-color: #e4e9f1;
+}
 .job-cards-heading {
-    background-color:  #d8d8d8;
+    background-color: #124559;
+    color: #fff; 
 }
 
 .job-cards-heading {
@@ -118,7 +127,11 @@ height: auto;
     padding: 15px 0 0;
 }
 
-.sponsored,
+.sponsored {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
 .job {
     width: 90%;
     margin: auto;
@@ -204,16 +217,22 @@ height: auto;
         background-color: #124559;
     }
     header {
-        height: auto; 
+        height: 350px;
     }
     header section {
         width: 100vw;
     }
     .header-img {
-        width: 100vw;
+        visibility: hidden;
     }
     .third {
         width: 100vw; 
+    }
+    .sponsored-job {
+        width: 90vw; 
+    }
+    .job {
+        column-count: 1; 
     }
     footer {
         height: auto; 

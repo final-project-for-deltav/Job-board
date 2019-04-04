@@ -1,5 +1,5 @@
 .filter-bar {
-  background-color: #d8d8d8;
+  background-color: #124559;
   margin: 0;
   list-style: none;
 }
@@ -10,4 +10,9 @@
 
 .hide {
   display: none;
+}
+select {
+  margin-left: 25px; 
+  width: 200px; 
+  height: 30px; 
 }
