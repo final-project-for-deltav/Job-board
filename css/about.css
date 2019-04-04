@@ -87,4 +87,5 @@ body {
     background-image: url(../IMG_5021.JPG);
     background-size: cover;
     background-position: center;
+    border: solid #23ce6b 5px;
 }
