@@ -1,0 +1,15 @@
+.card-front,
+.card-back {
+  position: relative;
+}
+
+.heart-front,
+.heart-back {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.saved {
+  color: red;
+}
