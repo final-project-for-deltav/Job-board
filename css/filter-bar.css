@@ -1,7 +1,10 @@
 .filter-bar {
-  background-color: #124559;
+  background-color: #e4e9f1;
   margin: 0;
+  margin-bottom: 10px; 
   list-style: none;
+  margin-right: 80px; 
+  float: right; 
 }
 
 .filter-by {
@@ -13,6 +16,8 @@
 }
 select {
   margin-left: 25px; 
+  border: 2px solid #124559;
   width: 200px; 
   height: 30px; 
+  outline: none; 
 }

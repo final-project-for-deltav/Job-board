@@ -1,5 +1,6 @@
 var savedJobs = localStorage['savedJobs'] ? JSON.parse(localStorage['savedJobs']) : [];
-
+var counter = document.getElementById('saved-jobs-count');
+counter.innerText = savedJobs.length; 
 function addheart() {
   var heart = document.createElement('i');
   heart.className = 'fas fa-heart fa-2x';

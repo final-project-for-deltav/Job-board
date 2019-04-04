@@ -21,13 +21,22 @@ nav h1 {
 }
 nav a {
     float: right; 
-    margin: 24px 10px; 
+    margin: 24px 15px; 
     text-decoration: none; 
     color: #fff; 
 }
 nav a:hover {
     color: #999;
 
+}
+nav span {
+    float: right; 
+    margin: 24px 10px;
+    text-decoration: none; 
+    color: yellow; 
+}
+.employee-button {
+    color: #23ce6b;
 }
 header {
     clear: both;
@@ -229,7 +238,7 @@ height: auto;
         width: 100vw; 
     }
     .sponsored-job {
-        width: 90vw; 
+        width: 90vw;
     }
     .job {
         column-count: 1; 
@@ -256,31 +265,4 @@ height: auto;
 .pay {
     color: #2ba84a;
     font-size: 20px;
-}
-
-footer {
-    background-color: #124559;
-    padding: 20px 5px; 
-    width: 100%;
-    height: auto; 
-    color: #fff;
-    clear: both;
-    text-align: center;
-    overflow: hidden;
-}
-
-footer h1 {
-    text-align: center;
-}
-
-footer li {
-    list-style: none; 
-    margin-left: 15px; 
-}
-
-.footer-section {
-    height: 200px;
-    background-color: transparent;
-    float: left; 
-    box-sizing: border-box;
 }
