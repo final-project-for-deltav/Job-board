@@ -3,10 +3,6 @@ var savedJobs = [];
 function addheart() {
   var heart = document.createElement('i');
   heart.className = 'fas fa-heart fa-2x';
-  var hearts = Object.values(document.getElementsByClassName('fa-heart'));
-  for (var i = 0; i < hearts.length; i++) {
-    hearts[i].addEventListener('click', savedJobHandler);
-  }
   var cardBacks = document.getElementsByClassName('card-back');
   var cardFronts = document.getElementsByClassName('card-front');
   for (var i = 0; i < cardBacks.length; i++) {
@@ -17,20 +13,30 @@ function addheart() {
     heart.classList.remove('heart-back');
     cardFronts[i].appendChild(heart.cloneNode(true));
   }
+  var hearts = Object.values(document.getElementsByClassName('fa-heart'));
+  for (var i = 0; i < hearts.length; i++) {
+    hearts[i].addEventListener('click', savedJobHandler);
+  }
 }
 
 addheart();
 
 function savedJobHandler(e) {
+  console.log();
+  if (e.target.classList.contains('saved')) {
+    e.target.classList.remove('saved');
+    e.target.parentNode.previousSibling.getElementsByClassName('heart-front')[0].classList.remove('saved');
+  } else {
+    e.target.classList.add('saved');
+    e.target.parentNode.previousSibling.getElementsByClassName('heart-front')[0].classList.add('saved');
+  }
   var index = e.target.parentNode.parentNode.getAttribute('data-_id');
   if (!savedJobs.includes(Job.all[index])) {
     savedJobs.push(Job.all[index]);
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
-  console.log(savedJobs);
-
-
 }
+
 function renderSavedJobs() {
   var jobsDiv = document.getElementById('saved-jobs');
   for (var i = 0; i < savedJobs.length; i++) {
@@ -69,7 +75,6 @@ function renderSavedJobs() {
     cardContentsRight.appendChild(jobLink);
     cardContentsFull.appendChild(jobSummary);
     jobLink.appendChild(linkIcon);
-
   }
 }
 renderSavedJobs();
