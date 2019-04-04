@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #1a2424; 
@@ -6,13 +5,15 @@ body {
     margin: 0;  
     background-color:  #fff
 }
+
 h1 {
     text-align: center;
 }
+
 h2 {
     font-size: 18px;
     text-align: center;
-    color: #555; 
+    color: #555;
 }
 
 .half {
@@ -20,15 +21,19 @@ h2 {
     float: left; 
     box-sizing: border-box;
 }
+
 .left {
-    float: left; 
+    float: left;
 }
-.clear{
+
+.clear {
     clear: both; 
 }
+
 .in-line {
     display: inline-block;
 }
+
 .button {
     background-color: #23ce6b;
     border: 1px solid #fff; 
@@ -37,54 +42,56 @@ h2 {
     border-radius: 5px; 
     color: #fff; 
     font-size: 16px; 
-    margin: auto; 
+    margin: auto;
 }
+
 .shadow {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
+}
 
 nav {
     width: 100%; 
     background-color: #124559;
     height: 60px;
     text-align: center;
+    color: #fff;
+}
+
+nav h1 {
+    width: 100px; 
+    float: left; 
+}
+
+nav a {
+    float: right; 
+    margin: 24px 10px; 
+    text-decoration: none; 
     color: #fff; 
 }
-nav h1 {
-        width: 100px; 
-        float: left; 
-}
-nav a {
-        float: right; 
-        margin: 24px 10px; 
-        text-decoration: none; 
-        color: #fff; 
-}
+
 nav a:hover {
-        color: #999;
+    color: #999;
     
 }
+
 .row {
     width: 100%; 
     clear: both;
     overflow: hidden;
 }
+
 textarea {
- width: 620px; 
- height: 125px; 
- outline: none; 
- border: 2px solid #124559;
- border-radius: 5px; 
- display:block;
- float: left; 
- margin-bottom: 20px; 
-}
-textarea:focus {
-    width: 350px; 
+    width: 620px; 
     height: 125px; 
     outline: none; 
+    border: 2px solid #124559;
     border-radius: 5px; 
-   }
+    display:block;
+    float: left; 
+    margin-bottom: 20px; 
+    padding: 10px 0 0 10px;
+}
+
 .post-job-form {
     -webkit-appearance: none;
     background-color: #fff;
@@ -97,94 +104,130 @@ textarea:focus {
     overflow: hidden;
     margin: auto; 
 }
+
 .fullWidth {
     width: 100%; 
     float: left; 
 }
+
 .post-job-form__input {
-    border: none; 
     border: 2px solid #124559;
     border-radius: 5px; 
     height: 40px; 
     outline: none; 
     width: 300px; 
     background-color: fff;
-    margin-right: 200px; 
+    margin: 0 200px 30px 0; 
     display:block;
-    float: left; 
-    margin-bottom: 30px; 
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
+
 .post-job-form__label{
     display: block;
     float: left; 
     font-size: 12px; 
     margin-bottom: 10px; 
     text-transform: uppercase;
-    margin-bottom: 5px; 
-    /* background-color: #124559; */
+    margin-bottom: 5px;
 }
-.post-job-form__input:focus{
-    border: none; 
-    border-bottom: 2px solid yellow;
+
+.post-job-form__input:focus,
+textarea:focus,
+.payInput:focus {
+    border: 2px solid transparent;
+    border-bottom-color: yellow;
 }
+
 .checkbox {
     float: left; 
 }
+
 select {
     float: left; 
     width: 100px; 
     outline: none; 
     border: 2px solid #124559;
-    border-radius: 5px; 
+    border-radius: 5px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
+
 .payInput {
     font-size: 12px; 
     margin-bottom: 10px; 
     text-transform: uppercase;
-    margin-bottom: 5px; 
-    border: none; 
-    border-bottom: 2px solid #124559;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    border-bottom-color: #124559;
     width: 200px; 
     background-color: fff;
     display:block;
     float: left;
-    margin-right: 5px; 
-    /* background-color: #23ce6b; */
-    margin-bottom: 30px; 
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
 
-}
-footer {
-        background-color: #124559; 
-        margin-top: 15px; 
-        padding: 20px 5px; 
-        width: 100%;
-        height: auto; 
-        color: #fff;
-        clear: both;
-        text-align: center;
-        overflow: hidden;
-}
-footer h1 {
-        text-align: center;
-}
-footer li {
-        list-style: none; 
-        margin-left: 15px; 
-}
 .checkBoxLabel {
     font-size: 12px; 
     text-transform: uppercase;
     margin-top: 20px;
     margin-right: 10px; 
 }    
-.checkBox{
+
+.checkBox {
     margin-top: 20px;
     border: 2px solid #124559;
-   
-}    
+} 
+
+footer {
+    background-color: #124559;
+    color: #fff;
+    padding: 30px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer h1 {
+    text-align: center;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    text-align: center;
+}
+
+footer i {
+    margin-right: 30px;
+    float: left;
+}
+
+footer i:last-of-type {
+    margin-right: 0;
+}
+
+.icons {
+    width: 144px;
+    margin: auto;
+}
+
 .footer-section {
-        height: 200px;
-        background-color: transparent;
-        float: left; 
-        box-sizing: border-box;
+    background-color: transparent;
+    width: 49%;
+    display: inline-block;
+    box-sizing: border-box;
+    clear: both;
+    overflow: hidden;
+    height: 140px;
+}
+
+.footer-section:nth-child(2) {
+    margin-left: 1%;
 }
