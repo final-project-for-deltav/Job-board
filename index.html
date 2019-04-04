@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="css/filter-bar.css">
     <link rel="stylesheet" href="css/job-card-hearts.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>Document</title>
+    <title>SmartJobs</title>
+
 </head>
 <body>
     <nav>
-        <h1>navbar</h1> 
-        <a href="./post-job.html">Add A Job</a>
+        <h1>SmartJobs</h1> 
+        <a class = "employee-button" href="./post-job.html">Employers</a>
+        <span id = "saved-jobs-count"></span>
+        <a href="./savedJobs.html">My Saved Jobs</a> 
+     
         <a href="./about-us.html">About Us</a>
     </nav>
     <header>
@@ -27,22 +31,24 @@
         </section>
         
     </header>
-    <h1 class="job-cards-heading">Find a great job with Top Companies</h1>
-    <ul id="filter-bar" class="filter-bar">
-        <li class="filter-by">
-            <select id="filter-by__city">
-                <option value="all-cities">All</option>
-                <option value="des-moines">Des Moines</option>
-                <option value="cedar-rapids">Cedar Rapids</option>
-                <option value="iowa-city">Iowa City</option>
-            </select>
-        </li>
-    </ul>
+    <h1 class="job-cards-heading">Find a great job with Top Companies.</h1>
     <div class="sponsored-job-wrapper">
         <div class='sponsored' id="sponsored-cards"></div>
     </div>
 
     <div class="job-wrapper">
+           
+            <ul id="filter-bar" class="filter-bar">
+                    <div class="filter-by"> <p> Search By City &nbsp; <i class="fas fa-search"></i></p> </div>
+                    <li class="filter-by">
+                        <select id="filter-by__city">
+                            <option value="all-cities">All</option>
+                            <option value="des-moines">Des Moines</option>
+                            <option value="cedar-rapids">Cedar Rapids</option>
+                            <option value="iowa-city">Iowa City</option>
+                        </select>
+                    </li>
+                </ul>
         <div class='job' id="job-cards"></div>
     </div>
     <footer>
