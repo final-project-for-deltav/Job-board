@@ -48,10 +48,8 @@ nav a:hover {
     width: auto;
     height: 500px;
     background-color: rgb(18,69,89,0.5);
-    
-    
     color: #fff;
-    margin: 0 20px 20px;
+    margin: 0 65px 20px;
     border-radius: 15px 50px;
     clear: both;
     overflow: hidden;
@@ -80,41 +78,47 @@ nav a:hover {
 }
 
 .float-left1 {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: #fff;
-    margin: 25px;
+    margin-top: 80px;
+    margin-left: 60px;
     float: left;
     border-radius: 50%;
     background-image: url(../me.jpg);
     background-size: cover;
     background-position: center;
+    border: solid #23ce6b 5px;
     
 }
 
 .float-left2 {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: #fff;
-    margin: 25px;
+    margin-top: 80px;
+    margin-left: 60px;
     float: left;
     border-radius: 50%;
-    background-image: url(../me.jpg);
+    background-image: url(../IMG_5039.JPG);
     background-size: cover;
     background-position: center;
+    border: solid #23ce6b 5px;
     
 }
 
 .float-right {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: #fff;
-    margin: 25px;
-    float: right;
+    margin-top: 80px;
+    margin-left: 60px;
+    float: left;
     border-radius: 50%;
     background-image: url(../IMG_5021.JPG);
     background-size: cover;
     background-position: center;
+    border: solid #23ce6b 5px;
 }
 
 footer {
