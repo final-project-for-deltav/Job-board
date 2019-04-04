@@ -116,33 +116,3 @@ nav a:hover {
     background-size: cover;
     background-position: center;
 }
-
-footer {
-    background-color: #124559; 
-    margin-top: 15px; 
-    padding: 20px 5px; 
-    width: auto;
-    height: auto; 
-    color: #fff;
-    clear: both;
-    text-align: center;
-    overflow: hidden;
-}
-
-footer h1 {
-    text-align: center;
-}
-
-footer li {
-    list-style: none; 
-    margin-left: 15px; 
-}
-
-.footer-section {
-    height: 200px;
-    background-color: transparent;
-    float: left; 
-    box-sizing: border-box;
-}
-
-
