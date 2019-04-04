@@ -20,29 +20,35 @@
       <h1> Find the perfect candidate for your company!</h1>
       <h2> Fill out the information in this form to add your job listing to the jobs board.</h2>
     <form id="post-job-form" class="post-job-form">
-      <div class="input-container">
-        <label class="post-job-form__label" for="company-name">Company Name</label>
-        <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name" required>
+      <div class="top-four-inputs">
+        <div class="input-container">
+          <label class="post-job-form__label" for="company-name">Company Name</label>
+          <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name" required>
+        </div>
+        <div class="input-container">
+          <label class="post-job-form__label" for="job-title">Job Title</label>
+          <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title" required>
+        </div>
+        <div class="input-container">
+          <label class="post-job-form__label" for="city">City</label>
+          <input id="city" class="post-job-form__input" type="text" placeholder="City">
+        </div>
+        <div class="input-container">
+          <label class="post-job-form__label" for="application-link">Application Link</label>
+          <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">  
+        </div>
       </div>
-      <div class="input-container">
-        <label class="post-job-form__label" for="job-title">Job Title</label>
-        <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title" required>
-      </div>
-      <div class="input-container">
-        <label class="post-job-form__label" for="city">City</label>
-        <input id="city" class="post-job-form__input" type="text" placeholder="City">
-      </div>
-      <div class="input-container">
-        <label class="post-job-form__label" for="application-link">Application Link</label>
-        <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">  
-      </div>
-      <div class="input-container">
+      <div class="input-container textarea">
         <label class="post-job-form__label" for="job-summary">Job Summary</label>
         <textarea id="job-summary" class="post-job-form__textarea" placeholder="Job Summary" maxlength="200" required></textarea>  
       </div>
-      <div class="input-container">
+      <div class="input-container textarea">
+        <label class="post-job-form__label" for="about-company">About Company</label>
+        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company" maxlength="200" required></textarea>
+      </div>
+      <div class="input-container compensation-container">
         <label class="post-job-form__label" for="compensation-amount">Compensation</label>
-        <input id="compensation-amount" class = "payInput" type="number" placeholder="50000.00" required>
+        <input id="compensation-amount" class="post-job-form__input" type="number" placeholder="50000.00" required>
         <select id="compensation-frequency" class="compensation-frequency">
           <option value="yearly">Yearly</option>
           <option value="hourly">Hourly</option>
@@ -50,13 +56,9 @@
           <option value="monthly">Monthly</option>
         </select>
       </div>
-      <div class="input-container">
-        <label class="left checkBoxLabel" for="sponsored"> Is this job sponsored?</label>
-        <input id="sponsored" class="left checkBox" type="checkbox">
-      </div>
-      <div class="input-container">
-        <label class="post-job-form__label" for="about-company">About Company</label>
-        <textarea id="about-company" class="post-job-form__textarea" placeholder="About Company" maxlength="200" required></textarea>
+      <div class="input-container sponsored-check-container">
+        <input id="sponsored" class="sponsored-check" type="checkbox">
+        <label class="post-job-form__label" for="sponsored">Pay to sponsor this job listing?</label>
       </div>
       <input id="post-job-form__submit" class ="button" type="submit" value="Post Job">
     </form>
