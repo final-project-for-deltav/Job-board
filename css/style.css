@@ -266,30 +266,3 @@ height: auto;
     color: #2ba84a;
     font-size: 20px;
 }
-
-footer {
-    background-color: #124559;
-    padding: 20px 5px; 
-    width: 100%;
-    height: auto; 
-    color: #fff;
-    clear: both;
-    text-align: center;
-    overflow: hidden;
-}
-
-footer h1 {
-    text-align: center;
-}
-
-footer li {
-    list-style: none; 
-    margin-left: 15px; 
-}
-
-.footer-section {
-    height: 200px;
-    background-color: transparent;
-    float: left; 
-    box-sizing: border-box;
-}
