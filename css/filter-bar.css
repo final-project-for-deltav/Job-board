@@ -1,0 +1,13 @@
+.filter-bar {
+  background-color: #d8d8d8;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-by {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}

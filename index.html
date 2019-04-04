@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filter-bar.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,6 +26,16 @@
         
     </header>
     <h1 class="job-cards-heading">Find a great job with Top Companies</h1>
+    <ul id="filter-bar" class="filter-bar">
+        <li class="filter-by">
+            <select id="filter-by__city">
+                <option value="all-cities">All</option>
+                <option value="des-moines">Des Moines</option>
+                <option value="cedar-rapids">Cedar Rapids</option>
+                <option value="iowa-city">Iowa City</option>
+            </select>
+        </li>
+    </ul>
     <div class="job-wrapper">
         <div class='sponsored' id="sponsored-cards"></div>
     </div>
@@ -59,5 +70,6 @@
     <script src="./js/populateJobListings.js"></script>
     <script src="./js/cardFlip.js"></script>
     <script src="./js/savedJobs.js"></script>
+    <script src="./js/filterBar.js"></script>
 </body>
 </html>
