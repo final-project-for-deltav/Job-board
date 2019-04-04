@@ -249,9 +249,11 @@ footer {
     text-align: center;
     overflow: hidden;
 }
+
 footer h1 {
     text-align: center;
 }
+
 footer li {
     list-style: none; 
     margin-left: 15px; 
