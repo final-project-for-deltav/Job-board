@@ -1,29 +1,27 @@
-var savedjobs = [];
+var savedJobs = [];
 
 function addheart() {
   var heart = document.createElement('i');
   heart.className = 'fas fa-heart fa-2x';
-  hearts = document.getElementsByClassName("fa-heart")
-  hearts[i].addEventListener('click', savedJobHandler);
-  var cardBacks = document.getElementsByClassName('card-back');
-  console.log(cards);
-  for (var i = 0; i < cards.length; i++) {
-    cards[i].appendChild(heart.cloneNode(true));
+  var hearts = Object.values(document.getElementsByClassName('fa-heart'));
+  for (var i = 0; i < hearts.length; i++) {
+    hearts[i].addEventListener('click', savedJobHandler);
   }
-} 
+  var cardBacks = document.getElementsByClassName('card-back');
+  var cardFronts = document.getElementsByClassName('card-front');
+  for (var i = 0; i < cardBacks.length; i++) {
+    heart.classList.add('heart-back');
+    heart.classList.remove('heart-front');
+    cardBacks[i].appendChild(heart.cloneNode(true));
+    heart.classList.add('heart-front');
+    heart.classList.remove('heart-back');
+    cardFronts[i].appendChild(heart.cloneNode(true));
+  }
+}
 
 addheart();
 
-var savedjobs = [];
-
 function savedJobHandler(e) {
-<<<<<<< HEAD
-  var kippy = e.target.parentNode
-  var index = parseInt(kippy.getAttribute('data-_id'))
-  Job.all[index]
-};
-=======
-  // var x = document.getElementById("i").parentNode.nodeName;
   var index = e.target.parentNode.parentNode.getAttribute('data-_id');
   if (!savedJobs.includes(Job.all[index])) {
     savedJobs.push(Job.all[index]);
@@ -44,7 +42,7 @@ function renderSavedJobs() {
     cardContentsRight.className = 'cardContentsRight';
     var cardContentsFull = document.createElement('div');
     cardContentsFull.className = 'cardContentsFull';
-   
+
     var jobTitle = document.createElement('h1');
     var location = document.createElement('p');
     var companyName = document.createElement('h2');
@@ -57,7 +55,7 @@ function renderSavedJobs() {
     jobLink.setAttribute('target', 'blank');
     jobLink.innerText= 'Apply at Employers Site';
     jobTitle.innerText = savedJobs[i].jobTitle;
-    location.innerText = savedJobs[i].location + ", IA";
+    location.innerText = savedJobs[i].location + ', IA';
 
     companyName.innerText = savedJobs[i].companyName;
     jobSummary.innerText = savedJobs[i].jobSummary;
@@ -71,12 +69,7 @@ function renderSavedJobs() {
     cardContentsRight.appendChild(jobLink);
     cardContentsFull.appendChild(jobSummary);
     jobLink.appendChild(linkIcon);
-   
+
   }
 }
 renderSavedJobs();
-
-
-
-
->>>>>>> master
