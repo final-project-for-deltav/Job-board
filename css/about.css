@@ -118,35 +118,4 @@ nav a:hover {
     background-image: url(../IMG_5021.JPG);
     background-size: cover;
     background-position: center;
-    border: solid #23ce6b 5px;
-}
-
-footer {
-    background-color: #124559; 
-    margin-top: 15px; 
-    padding: 20px 5px; 
-    width: auto;
-    height: auto; 
-    color: #fff;
-    clear: both;
-    text-align: center;
-    overflow: hidden;
-}
-
-footer h1 {
-    text-align: center;
-}
-
-footer li {
-    list-style: none; 
-    margin-left: 15px; 
-}
-
-.footer-section {
-    height: 200px;
-    background-color: transparent;
-    float: left; 
-    box-sizing: border-box;
-}
-
 }

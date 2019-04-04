@@ -1,51 +1,21 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #1a2424; 
-    overflow-x: hidden; 
-    margin: 0;  
-    background-color:  #fff
+    color: #1a2424;
+    margin: 0;
 }
 
-h1 {
+main {
+    min-height: calc(100vh - 260px);
+}
+
+h1,
+h2 {
     text-align: center;
 }
 
 h2 {
     font-size: 18px;
-    text-align: center;
     color: #555;
-}
-
-.half {
-    width: 50%; 
-    float: left; 
-    box-sizing: border-box;
-}
-
-.left {
-    float: left;
-}
-
-.clear {
-    clear: both; 
-}
-
-.in-line {
-    display: inline-block;
-}
-
-.button {
-    background-color: #2bA84a;
-    border: 1px solid #fff; 
-    width: 200px; 
-    height: 50px; 
-    border-radius: 5px; 
-    color: #fff; 
-    font-size: 16px; 
-    margin: auto;
-}
-.button:hover{
-    background-color: #23ce6b;
 }
 
 .shadow {
@@ -73,110 +43,102 @@ nav a {
 }
 
 nav a:hover {
-    color: #999;
-    
+    color: #999;    
 }
 
-.row {
-    width: 100%; 
+.post-job-form {
+    max-width: 1000px;
+    margin: 0 auto 30px;
     clear: both;
     overflow: hidden;
 }
 
-textarea {
-    width: 620px; 
-    height: 125px; 
-    outline: none; 
-    border: 2px solid #124559;
-    display:block;
-    float: left; 
-    margin-bottom: 20px; 
-    padding: 10px 0 0 10px;
-}
-
-.post-job-form {
-    -webkit-appearance: none;
-    background-color: #fff;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    clear: both; 
-    overflow: hidden;
-    margin: auto; 
-}
-
-.fullWidth {
-    width: 100%; 
-    float: left; 
-}
-
-.post-job-form__input {
-    border: 2px solid #124559;
-    height: 40px; 
-    outline: none; 
-    width: 300px; 
-    background-color: fff;
-    margin: 0 200px 30px 0; 
-    display:block;
-    float: left;
-    padding-left: 10px;
+.input-container {
     box-sizing: border-box;
 }
 
-.post-job-form__label{
+.top-four-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+}
+
+.top-four-inputs .input-container {
+    margin-bottom: 30px;
+}
+
+.top-four-inputs .post-job-form__label,
+.top-four-inputs .post-job-form__input {
     display: block;
-    float: left; 
-    font-size: 12px; 
-    margin-bottom: 10px; 
-    text-transform: uppercase;
-    margin-bottom: 5px;
+}
+
+.textarea {
+    margin-bottom: 30px;
+}
+
+.textarea .post-job-form__label,
+.textarea .post-job-form__textarea {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.compensation-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.sponsored-check-container {
+    width: 220px;
+    margin: 0 auto 30px;
+}
+
+.post-job-form__input,
+.post-job-form__textarea,
+.compensation-frequency {
+    border: 2px solid #124559;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.post-job-form__label {
+    padding-bottom: 10px;
+}
+
+.post-job-form__input {
+    padding-left: 10px;
+    height: 30px;
+}
+
+.post-job-form__textarea {
+    height: 180px;
+    padding: 10px 0 0 10px;
 }
 
 .post-job-form__input:focus,
 textarea:focus,
-.payInput:focus {
+.compensation-frequency:focus {
     border: 2px solid #23ce6b;
-    outline: none; 
 }
 
-.checkbox {
-    float: left; 
-}
-
-select {
-    float: left; 
-    width: 100px; 
-    outline: none; 
-    border: 2px solid #124559;
-    border-radius: 5px;
-    padding-left: 20px;
-    box-sizing: border-box;
-}
-
-.payInput {
-    font-size: 12px; 
-    margin-bottom: 10px; 
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    border: 2px solid transparent;
-    border-bottom-color: #124559;
+.button {
+    background-color: #2bA84a;
     width: 200px; 
-    background-color: fff;
-    display:block;
-    float: left;
-    margin-right: 5px;
-    margin-bottom: 30px;
+    height: 50px; 
+    border-radius: 5px; 
+    color: #fff; 
+    font-size: 16px; 
+    margin: auto;
+    border: none;
+    display: block;
 }
 
-.checkBoxLabel {
-    font-size: 12px; 
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-right: 10px; 
-}    
-
-.checkBox {
-    margin-top: 20px;
-    border: 2px solid #124559;
+.button:hover{
+    background-color: #23ce6b;
 }
