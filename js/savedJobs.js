@@ -17,21 +17,12 @@ addheart();
 var savedjobs = [];
 
 function savedJobHandler(e) {
-<<<<<<< HEAD
-  var kippy = e.target.parentNode
-  var index = parseInt(kippy.getAttribute('data-_id'))
-  Job.all[index]
-};
-=======
   // var x = document.getElementById("i").parentNode.nodeName;
   var index = e.target.parentNode.parentNode.getAttribute('data-_id');
   if (!savedJobs.includes(Job.all[index])) {
     savedJobs.push(Job.all[index]);
     localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
   }
-  console.log(savedJobs);
-
-
 }
 function renderSavedJobs() {
   var jobsDiv = document.getElementById('saved-jobs');
@@ -79,4 +70,4 @@ renderSavedJobs();
 
 
 
->>>>>>> master
+
