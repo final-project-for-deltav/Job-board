@@ -1,23 +1,28 @@
+var savedjobs = [];
+
 function addheart() {
   var heart = document.createElement('i');
-  heart.className = 'fas fa-heart';
-  var hearts = document.getElementsByClassName('fa-heart');
+  heart.className = 'fas fa-heart fa-2x';
+  hearts = document.getElementsByClassName("fa-heart")
+  hearts[i].addEventListener('click', savedJobHandler);
   var cardBacks = document.getElementsByClassName('card-back');
-  var hearts = document.getElementsByClassName('fa-heart');
-
-  //   console.log(cards);
-  for (var i = 0; i < cardBacks.length; i++) {
-    cardBacks[i].appendChild(heart.cloneNode(true));
-    hearts[i].addEventListener('click', savedJobHandler);
+  console.log(cards);
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].appendChild(heart.cloneNode(true));
   }
-}
+} 
 
 addheart();
 
-
-var savedJobs = JSON.parse(localStorage.getItem('savedJobs')) || [];
+var savedjobs = [];
 
 function savedJobHandler(e) {
+<<<<<<< HEAD
+  var kippy = e.target.parentNode
+  var index = parseInt(kippy.getAttribute('data-_id'))
+  Job.all[index]
+};
+=======
   // var x = document.getElementById("i").parentNode.nodeName;
   var index = e.target.parentNode.parentNode.getAttribute('data-_id');
   if (!savedJobs.includes(Job.all[index])) {
@@ -74,3 +79,4 @@ renderSavedJobs();
 
 
 
+>>>>>>> master
