@@ -94,53 +94,43 @@ textarea:focus,
     outline: none; 
 }
 
-footer {
-    background-color: #124559;
-    color: #fff;
-    padding: 30px;
-    height: 200px;
+.checkbox {
+    float: left; 
+}
+
+select {
+    float: left; 
+    width: 100px; 
+    outline: none; 
+    border: 2px solid #124559;
+    border-radius: 5px;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 
-footer ul {
-    padding: 0;
-    margin: 0;
-}
-
-footer h1 {
-    text-align: center;
-    margin: 0;
-}
-
-footer li {
-    list-style: none;
-    text-align: center;
-}
-
-footer i {
-    margin-right: 30px;
+.payInput {
+    font-size: 12px; 
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    border-bottom-color: #124559;
+    width: 200px; 
+    background-color: fff;
+    display:block;
     float: left;
+    margin-right: 5px;
+    margin-bottom: 30px;
 }
 
-footer i:last-of-type {
-    margin-right: 0;
-}
+.checkBoxLabel {
+    font-size: 12px; 
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-right: 10px; 
+}    
 
-.icons {
-    width: 144px;
-    margin: auto;
-}
-
-.footer-section {
-    background-color: transparent;
-    width: 49%;
-    display: inline-block;
-    box-sizing: border-box;
-    clear: both;
-    overflow: hidden;
-    height: 140px;
-}
-
-.footer-section:nth-child(2) {
-    margin-left: 1%;
+.checkBox {
+    margin-top: 20px;
+    border: 2px solid #124559;
 }
