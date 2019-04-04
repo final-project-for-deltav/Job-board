@@ -1,6 +1,6 @@
 var savedJobs = localStorage['savedJobs'] ? JSON.parse(localStorage['savedJobs']) : [];
-var counter = document.getElementById('saved-jobs-count');
-counter.innerText = savedJobs.length; 
+
+
 function addheart() {
   var heart = document.createElement('i');
   heart.className = 'fas fa-heart fa-2x';
@@ -49,6 +49,8 @@ function savedJobHandler(e) {
     if (!savedJobs.includes(Job.all[index])) {
       savedJobs.push(Job.all[index]);
       localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
+      savedJobsCounter();
+
     }
   } else {
     var updatedSavedJobs = savedJobs.filter(job => savedJobs.indexOf(job) !== savedJobs.indexOf(Job.all[index]));
@@ -57,6 +59,14 @@ function savedJobHandler(e) {
   }
 }
 
+function savedJobsCounter() {
+  var savedJobs = localStorage['savedJobs'] ? JSON.parse(localStorage['savedJobs']) : [];
+  var counter = document.getElementById('saved-jobs-count');
+  if (savedJobs !== null && counter !== null) {
+    counter.innerText = savedJobs.length;
+    console.log(counter.innerHTML);
+  }
+}
 function renderSavedJobs() {
   var jobsDiv = document.getElementById('saved-jobs');
   if (jobsDiv) {
@@ -100,4 +110,5 @@ function renderSavedJobs() {
   }
 }
 renderSavedJobs();
+savedJobsCounter();
 
