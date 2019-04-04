@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #1a2424; 
+}
+nav {
+    width: 100%; 
+    background-color: #124559;
+    height: 60px;
+    text-align: center;
+    color: #fff; 
+    }
+    nav h1 {
+        width: 100px; 
+        float: left; 
+    }
+    nav a {
+        float: right; 
+        margin: 24px 10px; 
+        text-decoration: none; 
+        color: #fff; 
+    }
+    nav a:hover {
+        color: #999;
+    
+    }
+.left {
+    float: left; 
+}
+.right {
+    float: right; 
+}
+.half {
+    width: 50%; 
+    float: left; 
+    box-sizing: border-box;
+}
+.card {
+    margin: 20px; 
+    height: 150px;
+    padding: 15px; 
+    border: 2px solid #2ba84a; 
+}
+.card h1 {
+    font-size: 20px; 
+    margin: 0;
+    padding: 0; 
+}
+h2 {
+    font-size: 20px; 
+    color: #2ba84a;
+
+}
+p {
+    margin-top: -.5px; 
+    font-size: 18px;
+    color: #777; 
+}
+.card a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #2ba84a;
+    height: 50px; 
+    width: 150px; 
+}
+.card  a:hover {
+    background-color: #23ce6b;
+}
+.btn {
+    border: 2px solid green; 
+    height: 50px; 
+    width: 150px; 
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+.cardContentsRight {
+    text-align: right;
+    padding: 5px;
+    float: right; 
+    width: 50%; 
+    box-sizing: border-box;
+}
+.cardContentsLeft {
+    width: 50%; 
+    text-align: left;
+    padding: 5px;
+    float: left; 
+    box-sizing: border-box;
+    
+}
+.cardContentsFull {
+    width: 100%; 
+    clear: both; 
+}
+.icon {
+    margin-left: 8px; 
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #fff;
+    }
+    a {
+        margin-top: 10px; 
+    }
+    .card {
+        margin: 20px; 
+        padding: 15px; 
+        padding-bottom: 15px; 
+        border: 2px solid #2ba84a; 
+        height: auto; 
+    }
+    .cardContentsLeft {
+        margin-top: 10px; 
+        width: 100%;
+        text-align: left;
+    }
+    .cardContentsRight {
+        margin-top: 5px; 
+        width: 100%;
+        text-align: left;
+    }
+    .cardContentsFull {
+        padding-top: 15px; 
+        margin-top: 10px; 
+    }
+ 
+  }
