@@ -22,7 +22,6 @@ function addheart() {
 addheart();
 
 function savedJobHandler(e) {
-  console.log();
   if (e.target.classList.contains('saved')) {
     e.target.classList.remove('saved');
     e.target.parentNode.previousSibling.getElementsByClassName('heart-front')[0].classList.remove('saved');
@@ -31,9 +30,15 @@ function savedJobHandler(e) {
     e.target.parentNode.previousSibling.getElementsByClassName('heart-front')[0].classList.add('saved');
   }
   var index = e.target.parentNode.parentNode.getAttribute('data-_id');
-  if (!savedJobs.includes(Job.all[index])) {
-    savedJobs.push(Job.all[index]);
-    localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
+  if (e.target.classList.contains('saved')) {
+    if (!savedJobs.includes(Job.all[index])) {
+      savedJobs.push(Job.all[index]);
+      localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
+    }
+  } else {
+    var updatedSavedJobs = savedJobs.filter(job => savedJobs.indexOf(job) !== savedJobs.indexOf(Job.all[index]));
+    savedJobs = updatedSavedJobs;
+    localStorage.setItem('savedJobs', JSON.stringify(updatedSavedJobs));
   }
 }
 
