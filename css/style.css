@@ -21,13 +21,22 @@ nav h1 {
 }
 nav a {
     float: right; 
-    margin: 24px 10px; 
+    margin: 24px 15px; 
     text-decoration: none; 
     color: #fff; 
 }
 nav a:hover {
     color: #999;
 
+}
+nav span {
+    float: right; 
+    margin: 24px 10px;
+    text-decoration: none; 
+    color: yellow; 
+}
+.employee-button {
+    color: #23ce6b;
 }
 header {
     clear: both;
