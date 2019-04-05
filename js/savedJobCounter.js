@@ -5,7 +5,6 @@ function savedJobsCounter() {
   var counter = document.getElementById('saved-jobs-count');
   if (savedJobs !== null && counter !== null) {
     counter.innerText = savedJobs.length;
-    console.log('savedJobsCounter()');
   }
 }
 
