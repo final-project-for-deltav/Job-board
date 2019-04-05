@@ -25,19 +25,19 @@
       <div class="top-four-inputs">
         <div class="input-container">
           <label class="post-job-form__label" for="company-name">Company Name</label>
-          <input id="company-name" class="post-job-form__input" type="text" placeholder="Company Name" required>
+          <input id="company-name" class="post-job-form__input" type="text" placeholder="My Company" required>
         </div>
         <div class="input-container">
           <label class="post-job-form__label" for="job-title">Job Title</label>
-          <input id="job-title" class="post-job-form__input" type="text" placeholder="Job Title" required>
+          <input id="job-title" class="post-job-form__input" type="text" placeholder="Developer" required>
         </div>
         <div class="input-container">
           <label class="post-job-form__label" for="city">City</label>
-          <input id="city" class="post-job-form__input" type="text" placeholder="City">
+          <input id="city" class="post-job-form__input" type="text" placeholder="Cedar Rapids">
         </div>
         <div class="input-container">
           <label class="post-job-form__label" for="application-link">Application Link</label>
-          <input id="application-link" class="post-job-form__input" type="text" placeholder="Application Link">  
+          <input id="application-link" class="post-job-form__input" type="text" placeholder="https://example.com">  
         </div>
       </div>
       <div class="input-container textarea">
@@ -56,6 +56,15 @@
           <option value="hourly">Hourly</option>
           <option value="weekly">Weekly</option>
           <option value="monthly">Monthly</option>
+        </select>
+      </div>
+      <div class="input-container compensation-container">
+        <label class="post-job-form__label" for="reimbursement-amount">Student Loan Reimbursement</label>
+        <input id="reimbursement-amount" class="post-job-form__input" type="number" placeholder="5000.00" required>
+        <select id="reimbursement-frequency" class="reimbursement-frequency">
+          <option value="yearly">Yearly</option>
+          <option value="monthly">Monthly</option>
+          <option value="once">Once</option>
         </select>
       </div>
       <div class="input-container sponsored-check-container">

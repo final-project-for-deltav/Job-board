@@ -11,7 +11,8 @@ function collectFormData() {
     document.getElementById('city').value,
     document.getElementById('job-summary').value,
     document.getElementById('application-link').value,
-    document.getElementById('about-company').value
+    document.getElementById('about-company').value,
+    '$' + parseFloat(document.getElementById('reimbursement-amount').value).toFixed(2) + ' ' + document.getElementById('reimbursement-frequency').value,
   ];
   return data;
 }

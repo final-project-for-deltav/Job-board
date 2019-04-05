@@ -16,11 +16,11 @@ function createJobCardDiv(parent, jobs, iterator) {
   div.setAttribute('data-_id', jobs[iterator]._id);
   parentEl.appendChild(div);
 
-  createJobCardFace(div.getAttribute('data-_id'), jobs[iterator].jobTitle, jobs[iterator].companyName, jobs[iterator].location, jobs[iterator].compensation);
+  createJobCardFace(div.getAttribute('data-_id'), jobs[iterator].jobTitle, jobs[iterator].companyName, jobs[iterator].location, jobs[iterator].compensation, jobs[iterator].reimbursement);
   createJobCardBack(div.getAttribute('data-_id'), jobs[iterator].jobSummary, jobs[iterator].link);
 }
 
-function createJobCardFace(parent, title, name, loc, pay) {
+function createJobCardFace(parent, title, name, loc, pay, reimbursementAmount) {
   var elements = document.querySelectorAll(`[data-_id='${parent}']`);
   var parentEl = elements[elements.length - 1];
   var cardFace = createEl('div');
@@ -34,13 +34,16 @@ function createJobCardFace(parent, title, name, loc, pay) {
   mapMarker.className = 'fas fa-map-marker-alt';
   var compensation = createEl('p');
   compensation.className = 'pay';
+  var reimbursement = createEl('p');
+  reimbursement.className = 'pay';
   var ad = createEl('i');
   ad.className = 'fas fa-ad';
 
   jobTitle.innerText = title;
   companyName.innerText = name;
   location.innerText = loc;
-  compensation.innerText = pay;
+  compensation.innerText = `Compensation: ${pay}`;
+  reimbursement.innerText = `Loan Reimbursement: ${reimbursementAmount}`;
 
   parentEl.appendChild(cardFace);
   cardFace.appendChild(jobTitle);
@@ -49,6 +52,7 @@ function createJobCardFace(parent, title, name, loc, pay) {
   locationDiv.appendChild(mapMarker);
   locationDiv.appendChild(location);
   cardFace.appendChild(compensation);
+  cardFace.appendChild(reimbursement);
   if (parentEl.parentNode.id === 'sponsored-cards') {
     cardFace.appendChild(ad);
   }

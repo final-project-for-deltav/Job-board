@@ -9,10 +9,10 @@ for (var i = 0; i < cardContainers.length; i++) {
 
 function showBack(e) {
   e.target.firstElementChild.style.transform = 'rotateY(180deg)';
-  e.target.lastElementChild.style.transform = 'translateY(-224px) rotateY(0deg)';
+  e.target.lastElementChild.style.transform = 'translateY(-250px) rotateY(0deg)';
 }
 
 function showFront(e) {
   e.target.firstElementChild.style.transform = 'rotateY(0deg)';
-  e.target.lastElementChild.style.transform = 'translateY(-224px) rotateY(180deg)';
+  e.target.lastElementChild.style.transform = 'translateY(-250px) rotateY(180deg)';
 }

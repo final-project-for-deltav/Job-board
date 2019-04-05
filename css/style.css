@@ -108,19 +108,14 @@ header img{
     width: 90%;
     margin: auto;
     box-sizing: border-box;
-}
-.job {
-    width: 90%;
-    margin: auto;
-    box-sizing: border-box;
-}
-
-.sponsored {
     padding-top: 15px;
     height: 300px;
 }
 
 .job {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
     column-count: 3;
     padding-bottom: 30px;
 }
@@ -163,7 +158,7 @@ header img{
 .card-container,
 .card-front,
 .card-back {
-    height: 224px;
+    height: 250px;
 }
 
 .card-front,
@@ -173,7 +168,7 @@ header img{
 }
 
 .card-back {
-    transform: translateY(-224px) rotateY(180deg);
+    transform: translateY(-250px) rotateY(180deg);
 }
 
 .sponsored-job {
