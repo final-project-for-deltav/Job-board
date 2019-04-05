@@ -45,13 +45,21 @@ function savedJobHandler(e) {
     e.target.parentNode.previousSibling.getElementsByClassName('heart-front')[0].classList.add('saved');
   }
   var index = e.target.parentNode.parentNode.getAttribute('data-_id');
+  var jobToSave;
+  (function getJobToSave() {
+    Job.all.forEach(function(job) {
+      if (job._id === parseInt(index)) {
+        jobToSave = job;
+      }
+    });
+  }());
   if (e.target.classList.contains('saved')) {
-    if (!savedJobs.includes(Job.all[index])) {
-      savedJobs.push(Job.all[index]);
+    if (!savedJobs.includes(jobToSave)) {
+      savedJobs.push(jobToSave);
       localStorage.setItem('savedJobs', JSON.stringify(savedJobs));
     }
   } else {
-    var updatedSavedJobs = savedJobs.filter(job => savedJobs.indexOf(job) !== savedJobs.indexOf(Job.all[index]));
+    var updatedSavedJobs = savedJobs.filter(job => savedJobs.indexOf(job) !== savedJobs.indexOf(jobToSave));
     savedJobs = updatedSavedJobs;
     localStorage.setItem('savedJobs', JSON.stringify(updatedSavedJobs));
   }
