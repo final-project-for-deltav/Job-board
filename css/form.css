@@ -48,7 +48,8 @@ h2 {
     margin: 0 auto;
 }
 
-.compensation-container {
+.compensation-container,
+.reimbursement-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -63,7 +64,8 @@ h2 {
 
 .post-job-form__input,
 .post-job-form__textarea,
-.compensation-frequency {
+.compensation-frequency,
+.reimbursement-frequency {
     border: 2px solid #124559;
     border-radius: 5px;
     box-sizing: border-box;
@@ -85,7 +87,8 @@ h2 {
 
 .post-job-form__input:focus,
 textarea:focus,
-.compensation-frequency:focus {
+.compensation-frequency:focus,
+.reimbursement-frequency:focus {
     border: 2px solid #23ce6b;
 }
 
